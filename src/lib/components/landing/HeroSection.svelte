@@ -18,7 +18,7 @@
 	};
 </script>
 
-<section id="hero" class="relative mx-auto mt-32 max-w-7xl px-6 text-center md:px-8">
+<section id="hero" class="relative mx-auto mt-8 max-w-7xl px-6 text-center sm:mt-32 md:px-8">
 	<DotPattern class="[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]" />
 	<a href="https://app.undb.io" target="_blank" rel="noopener noreferrer">
 		<div class="z-10 flex items-center justify-center">
@@ -63,7 +63,7 @@
 		<br class="hidden md:block" />
 		Nocode platform & BaaS you can host yourself.
 	</p>
-	<div class="flex justify-center gap-4">
+	<div class="flex flex-col justify-center gap-4 sm:flex-row">
 		<Button
 			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 		>
@@ -100,7 +100,7 @@
 			rootMargin: '-100px'
 		}}
 		on:inview_change={handleChange}
-		class="relative mt-32 animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
+		class="sm:md-32 relative mt-8 animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
 	>
 		<div
 			class="rounded-xl border border-white/10 bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:size-full before:opacity-0 before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] before:[filter:blur(180px)] {inView

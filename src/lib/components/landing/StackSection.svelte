@@ -12,7 +12,9 @@
 	export { className as class };
 </script>
 
-<section class="my-20 flex w-full items-center justify-center gap-10">
+<section
+	class="my-20 flex w-full flex-col items-center justify-center gap-10 px-5 sm:flex-row sm:px-0"
+>
 	<div class="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
 		<BoxReveal boxColor={'#5046e6'} duration={0.5}>
 			<p class="text-[3.5rem] font-semibold">
