@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { ArrowRightIcon, BookIcon, CloudyIcon, GithubIcon } from 'lucide-svelte';
-	import AnimatedShinyText from '$lib/components/magic/AnimatedShinyText/AnimatedShinyText.svelte';
 	import BorderBeam from '$lib/components/magic/borderbeam/BorderBeam.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import type { ObserverEventDetails } from 'svelte-inview';

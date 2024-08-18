@@ -3,7 +3,7 @@
 	import BorderBeam from '../magic/borderbeam/BorderBeam.svelte';
 </script>
 
-<section class="container bottom-0 w-full space-y-6 rounded-sm px-5 lg:px-20">
+<section class="container bottom-0 -mt-10 w-full space-y-6 rounded-sm px-5 lg:px-20">
 	<BlurFade delay={0.25}>
 		<h1 class="text-center text-3xl font-bold">Roadmap of undb 👋</h1>
 	</BlurFade>
