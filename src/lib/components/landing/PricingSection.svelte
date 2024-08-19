@@ -16,10 +16,11 @@
 			name: 'Basic',
 			description: 'A basic plan for startups and individual users',
 			features: [
-				'AI-powered analytics',
+				'1 workspace',
 				'Basic support',
-				'5 projects limit',
-				'Access to basic AI tools'
+				'20 members per workspace',
+				'100 tables per workspace',
+				'5,000 records per table'
 			],
 			monthlyPrice: 0,
 			yearlyPrice: 0,
@@ -32,11 +33,12 @@
 			name: 'Pro',
 			description: 'A premium plan for growing businesses',
 			features: [
-				'Advanced AI insights',
+				'All features of Basic plan',
+				'5 workspaces',
+				'20 members per workspace',
 				'Priority support',
-				'Unlimited projects',
-				'Access to all AI tools',
-				'Custom integrations'
+				'1000 tables per workspace',
+				'50,000 records per table'
 			],
 			monthlyPrice: 1900,
 			yearlyPrice: 19000,
@@ -48,14 +50,7 @@
 			id: 'price_5',
 			name: 'Custom',
 			description: 'An enterprise plan with advanced features for large organizations',
-			features: [
-				'Custom AI solutions',
-				'24/7 dedicated support',
-				'Unlimited projects',
-				'Access to all AI tools',
-				'Custom integrations',
-				'Data security and compliance'
-			],
+			features: ['All features of Pro plan', '24/7 dedicated support', 'Custom limits'],
 			monthlyPrice: 'Custom',
 			yearlyPrice: 'Custom',
 			isMostPopular: false,
