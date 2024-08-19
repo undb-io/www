@@ -7,8 +7,8 @@
 			label: 'Product',
 			items: [
 				{
-					href: '/',
-					name: 'Email Collection'
+					href: 'https://app.undb.io',
+					name: 'Undb'
 				}
 				// {
 				// 	href: '/pricing',
@@ -24,6 +24,10 @@
 		{
 			label: 'Community',
 			items: [
+				{
+					href: 'https://github.com/undb-io/undb',
+					name: 'Github'
+				},
 				{
 					href: 'https://discord.gg/pUw3zcUU',
 					name: 'Discord'

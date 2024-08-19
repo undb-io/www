@@ -10,23 +10,18 @@
 	const menuItem = [
 		{
 			id: 1,
-			label: 'Features',
-			href: '#'
+			label: 'Documentation',
+			href: 'https://docs.undb.io'
 		},
 		{
 			id: 2,
-			label: 'Pricing',
-			href: '#'
+			label: 'Template',
+			href: 'https://template.undb.io'
 		},
 		{
 			id: 3,
-			label: 'Careers',
-			href: '#'
-		},
-		{
-			id: 4,
-			label: 'Contact Us',
-			href: '#'
+			label: 'Get Started',
+			href: 'https://app.undb.io'
 		}
 	];
 
@@ -53,16 +48,16 @@
 	class="fixed left-0 top-0 z-50 w-full -translate-y-4 animate-fade-in border-b opacity-0 backdrop-blur-md"
 >
 	<!-- {#if innerWidth < 768} -->
-	<div class="container flex h-14 items-center justify-between">
+	<div class="container flex h-12 items-center justify-between md:h-14">
 		<a class="text-md flex items-center gap-2 font-semibold" href="/">
 			<img src={Logo} alt="Undb" class="h-4 w-4" />
-			Undb
+			<span class="hidden md:block"> Undb </span>
 		</a>
 
-		<div class="ml-auto flex h-full items-center">
+		<div class="ml-auto hidden h-full items-center md:flex">
 			<Button
 				variant="link"
-				class="inline-flex items-center text-sm"
+				class=" inline-flex items-center text-sm"
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://docs.undb.io"
@@ -119,7 +114,7 @@
 >
 	{#if hamburgerMenuIsOpen === true}
 		<div class="container flex h-14 items-center justify-between">
-			<a class="text-md flex items-center" href="/"> Svee UI </a>
+			<a class="text-md flex items-center" href="/"> Undb </a>
 
 			<button class="md:hidden" use:toggleOverflowHidden>
 				<span class="sr-only">Toggle menu</span>

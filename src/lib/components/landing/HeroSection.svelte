@@ -18,7 +18,7 @@
 	};
 </script>
 
-<section id="hero" class="relative mx-auto mt-8 max-w-7xl px-6 text-center sm:mt-32 md:px-8">
+<section id="hero" class="relative mx-auto mt-20 max-w-7xl px-6 text-center sm:mt-32 md:px-8">
 	<DotPattern class="[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]" />
 	<a href="https://app.undb.io" target="_blank" rel="noopener noreferrer">
 		<div class="z-10 flex items-center justify-center">
