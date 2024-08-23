@@ -18,13 +18,13 @@
 	<div class="h-full w-full max-w-[32rem] items-center justify-center overflow-hidden pt-8">
 		<BoxReveal boxColor={'#5046e6'} duration={0.5}>
 			<p class="text-[3.5rem] font-semibold">
-				Mordern Stacks<span class="text-[#5046e6]">.</span>
+				Modern Stacks<span class="text-[#5046e6]">.</span>
 			</p>
 		</BoxReveal>
 
 		<BoxReveal duration={0.5}>
 			<h2 class="mt-[.5rem] text-[1rem]">
-				Using mordern stacks{' '}
+				Using modern stacks{' '}
 				<span class="text-primary">that are easy to use</span>
 			</h2>
 		</BoxReveal>
