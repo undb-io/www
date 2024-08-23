@@ -29,7 +29,7 @@
 					name: 'Github'
 				},
 				{
-					href: 'https://discord.gg/pUw3zcUU',
+					href: 'https://discord.gg/3rcNdU3y3U',
 					name: 'Discord'
 				},
 				{
@@ -56,7 +56,7 @@
 
 	const footerSocials = [
 		{
-			href: 'https://discord.gg/pUw3zcUU',
+			href: 'https://discord.gg/3rcNdU3y3U',
 			name: 'Discord',
 			icon: DiscordSvg
 		}
