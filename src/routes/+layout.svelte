@@ -1,20 +1,17 @@
 <script>
-	import { dev } from '$app/environment';
+	import { onMount } from 'svelte';
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
+	import mixpanel from 'mixpanel-browser';
+	import { env } from '$env/dynamic/public';
+
+	onMount(() => {
+		if (env.PUBLIC_MIXPANEL_TOKEN) {
+			mixpanel.init(env.PUBLIC_MIXPANEL_TOKEN);
+		}
+	});
 </script>
 
 <ModeWatcher />
 
 <slot></slot>
-
-<svelte:head>
-	{#if !dev}
-		<script
-			async
-			defer
-			src="http://89.116.212.166:12345/tracker.js"
-			data-website-id="cm08y36hv0001wxcraa1zy1dm"
-		></script>
-	{/if}
-</svelte:head>
