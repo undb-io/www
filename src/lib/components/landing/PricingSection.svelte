@@ -16,11 +16,10 @@
 			name: 'Basic',
 			description: 'A basic plan for startups and individual users',
 			features: [
-				'1 workspace',
 				'Basic support',
-				'20 members per workspace',
-				'100 tables per workspace',
-				'5,000 records per table'
+				'1 member included',
+				'1,000 open api request every day',
+				'5,0000 records every space'
 			],
 			monthlyPrice: 0,
 			yearlyPrice: 0,
@@ -34,20 +33,19 @@
 			description: 'A premium plan for growing businesses',
 			features: [
 				'All features of Basic plan',
-				'5 workspaces',
-				'20 members per workspace',
-				'Priority support',
-				'1000 tables per workspace',
-				'50,000 records per table'
+				'30 members included',
+				'10,000 open api request every day',
+				'500,000 records every space',
+				'Priority support'
 			],
 			monthlyPrice: 1900,
 			yearlyPrice: 19000,
 			isMostPopular: true,
-			button: 'Comming soon...',
-			href: undefined
+			button: 'Upgrade',
+			href: 'https://checkout.undb.io'
 		},
 		{
-			id: 'price_5',
+			id: 'price_3',
 			name: 'Custom',
 			description: 'An enterprise plan with advanced features for large organizations',
 			features: ['All features of Pro plan', '24/7 dedicated support', 'Custom limits'],
