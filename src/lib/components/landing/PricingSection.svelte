@@ -41,7 +41,7 @@
 			monthlyPrice: 1900,
 			yearlyPrice: 19000,
 			isMostPopular: true,
-			button: 'Upgrade',
+			button: 'Subscribe',
 			href: 'https://checkout.undb.io'
 		},
 		{
