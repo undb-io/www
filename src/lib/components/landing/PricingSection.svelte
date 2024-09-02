@@ -56,7 +56,7 @@
 			href: 'mailto:hi@undb.io'
 		}
 	];
-	let interval: Interval = 'month';
+	let interval: Interval = 'year';
 	let isLoading = false;
 	let index = '';
 	let onSubscribeClick = async (priceId: string) => {
@@ -97,6 +97,7 @@
 				on:click={() => {
 					interval = interval === 'month' ? 'year' : 'month';
 				}}
+				checked={interval === 'year'}
 				id="interval"
 			/>
 			<span>Annual</span>
