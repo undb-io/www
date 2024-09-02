@@ -19,7 +19,8 @@
 				'Basic support',
 				'1 member included',
 				'1,000 open api request every day',
-				'10,000 records every space'
+				'10,000 records every space',
+				'All upcoming features'
 			],
 			monthlyPrice: 0,
 			yearlyPrice: 0,
@@ -36,7 +37,8 @@
 				'30 members included',
 				'10,000 open api request every day',
 				'100,000 records every space',
-				'Priority support'
+				'Priority support',
+				'All upcoming features'
 			],
 			monthlyPrice: 1900,
 			yearlyPrice: 19000,
@@ -87,8 +89,7 @@
 				{' '}
 				<strong>affordable plan</strong>
 				{' '}
-				that&apos;s packed with the best features for engaging your audience, creating customer loyalty,
-				and driving sales.
+				that has no functional limitations, only quantity restrictions.
 			</p>
 		</div>
 
