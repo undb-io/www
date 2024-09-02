@@ -20,6 +20,11 @@
 		},
 		{
 			id: 3,
+			label: 'Pricing',
+			href: 'https://checkout.undb.io'
+		},
+		{
+			id: 4,
 			label: 'Get Started',
 			href: 'https://app.undb.io'
 		}
@@ -73,6 +78,15 @@
 				href="https://template.undb.io"
 			>
 				Template
+			</Button>
+			<Button
+				variant="link"
+				class="inline-flex items-center text-sm"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://checkout.undb.io"
+			>
+				Pricing
 			</Button>
 			<Button
 				variant="secondary"
