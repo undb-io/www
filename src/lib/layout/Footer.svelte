@@ -67,7 +67,7 @@
 	<div class="mx-auto w-full max-w-screen-xl xl:pb-2">
 		<div class="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
 			<div class="mb-12 flex flex-col gap-4">
-				<a href="https://animation-svelte.vercel.app" class="flex items-center gap-2">
+				<a href="https://undb.io" class="flex items-center gap-2">
 					<img src={Logo} alt="Undb" class="size-6" />
 					<span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
 						Undb
@@ -119,7 +119,7 @@
 				{' '}
 				{new Date().getFullYear()}
 				{' '}
-				<a href="/" class="cursor-pointer">Svee UI</a>
+				<a href="/" class="cursor-pointer">Undb</a>
 				. All Rights Reserved.
 			</span>
 		</div>
