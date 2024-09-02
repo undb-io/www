@@ -7,7 +7,11 @@
 
 	onMount(() => {
 		if (env.PUBLIC_MIXPANEL_TOKEN) {
-			mixpanel.init(env.PUBLIC_MIXPANEL_TOKEN);
+			mixpanel.init(env.PUBLIC_MIXPANEL_TOKEN, {
+				debug: true,
+				track_pageview: true,
+				persistence: 'localStorage'
+			});
 		}
 	});
 </script>
