@@ -72,6 +72,9 @@
 	</p>
 	<div class="flex flex-col justify-center gap-4 sm:flex-row">
 		<Button
+			href="https://app.undb.io"
+			target="_blank"
+			rel="noopener noreferrer"
 			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 		>
 			<CloudyIcon class="mr-2 h-4 w-4" />
