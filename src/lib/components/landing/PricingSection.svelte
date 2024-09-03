@@ -19,7 +19,7 @@
 				'Basic support',
 				'1 member included',
 				'1,000 open api request every day',
-				'10,000 records every space',
+				'3,000 records per space',
 				'All upcoming features'
 			],
 			monthlyPrice: 0,
@@ -36,7 +36,7 @@
 				'All features of Basic plan',
 				'30 members included',
 				'10,000 open api request every day',
-				'100,000 records every space',
+				'50,000 records per space',
 				'Priority support',
 				'All upcoming features'
 			],
