@@ -1,5 +1,12 @@
 <script lang="ts">
-	import { ArrowRightIcon, BookIcon, CloudyIcon, GithubIcon } from 'lucide-svelte';
+	import {
+		ArrowRightIcon,
+		BookIcon,
+		CloudyIcon,
+		FileIcon,
+		GithubIcon,
+		PackageIcon
+	} from 'lucide-svelte';
 	import BorderBeam from '$lib/components/magic/borderbeam/BorderBeam.svelte';
 	import Button from '$lib/components/ui/button/button.svelte';
 	import type { ObserverEventDetails } from 'svelte-inview';
@@ -82,6 +89,16 @@
 		>
 			<BookIcon class="mr-2 h-4 w-4" />
 			<span>Documentation</span>
+		</Button>
+		<Button
+			variant="outline"
+			href="https://template.undb.io"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="-translate-y-4 animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]"
+		>
+			<PackageIcon class="mr-2 h-4 w-4" />
+			<span>Template</span>
 		</Button>
 		<Button
 			variant="outline"
