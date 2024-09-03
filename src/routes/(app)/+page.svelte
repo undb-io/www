@@ -26,7 +26,7 @@
 </svelte:head>
 <HeroSection />
 <SphereMask />
-<RoadmapSection />
-<SphereMask />
 <PricingSection />
+<SphereMask />
+<RoadmapSection />
 <StackSection />
