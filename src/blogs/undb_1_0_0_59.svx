@@ -1,0 +1,35 @@
+---
+title: 'Undb Update: New Duration and Percentage Fields, Form Enhancements, and Improved Color Options'
+description: 'Undb Update: New Duration and Percentage Fields, Form Enhancements, and Improved Color Options'
+date: '2024-09-04'
+categories:
+  - undb
+published: true
+author: 'Undb'
+---
+
+We’re excited to share our latest update for undb, which brings a few handy new features and improvements to enhance your workflow. While this update is more of a routine enhancement, we believe it will make working with your data and forms more streamlined and intuitive.
+
+### New Features:
+
+1. **Duration Field**: We’ve added a new field type that allows you to store and manage durations. This is useful for tracking time-based data like task durations, project timelines, or any other time intervals.
+
+![duration-field](/blogs/20240904/duration.png)
+
+2. **Percentage Field**: Another new field type for handling percentage values. Whether it’s for progress tracking, calculations, or any other percentage-based data, this field has you covered.
+
+![percentage-field](/blogs/20240904/percentage.png)
+
+### Form Enhancements:
+
+- **Delete Form Option**: You can now easily delete forms with just a few clicks, helping you keep your workspace organized.
+
+- **Create New Form from Dropdown**: When creating a new record, you now have the option to create a new form directly from the dropdown menu. This small addition simplifies the process of building custom forms on the fly without navigating away.
+
+### Color Improvements:
+
+- **Preset Color Options**: We’ve added initial preset colors for you to choose from, making it faster to color-code your views and records.
+
+- **Improved Color Display for Options**: The way colors are displayed for options has been enhanced, making it easier to distinguish between different selections visually.
+
+This update brings subtle yet helpful improvements to the undb platform, designed to streamline your everyday data management experience. Stay tuned for more updates, and as always, we welcome your feedback!
