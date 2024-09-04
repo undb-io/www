@@ -58,7 +58,7 @@
 			href: 'mailto:hi@undb.io'
 		}
 	];
-	let interval: Interval = 'year';
+	let interval: Interval = 'month';
 	let isLoading = false;
 	let index = '';
 	/*
