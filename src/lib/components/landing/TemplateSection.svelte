@@ -1,5 +1,6 @@
 <script>
 	import { Calendar, Plane, Rss, ReceiptText } from 'lucide-svelte';
+	import { Button } from '$lib/components/ui/button';
 	import FlipText from '$lib/components/magic/FlipText.svelte';
 	import BentoGrid from '$lib/components/magic/BentoGrid/BentoGrid.svelte';
 	import BentoCard from '$lib/components/magic/BentoGrid/BentoCard.svelte';
@@ -58,6 +59,10 @@
 	<p class="text-center text-lg text-gray-500 dark:text-gray-400">
 		You can use templates to get started with your project.
 	</p>
+
+	<div class="flex items-center justify-center">
+		<Button href="https://template.undb.io">🚀 View all templates</Button>
+	</div>
 
 	<div class="flex items-center justify-center">
 		<BentoGrid>
