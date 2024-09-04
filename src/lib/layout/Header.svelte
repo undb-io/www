@@ -88,6 +88,7 @@
 			>
 				Pricing
 			</Button>
+			<Button variant="link" class="inline-flex items-center text-sm" href="/blog">Blog</Button>
 			<Button
 				variant="secondary"
 				class="ml-3 text-sm"
