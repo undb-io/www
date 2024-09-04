@@ -37,20 +37,6 @@
 					name: 'Email'
 				}
 			]
-		},
-		{
-			label: 'Legal',
-			items: [
-				{
-					href: '/terms',
-					name: 'Terms'
-				},
-
-				{
-					href: '/privacy',
-					name: 'Privacy'
-				}
-			]
 		}
 	];
 
