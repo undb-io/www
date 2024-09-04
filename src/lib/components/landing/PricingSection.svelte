@@ -69,7 +69,7 @@
 </script>
 
 <section id="pricing">
-	<div class="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 py-14 md:px-8">
+	<div class="mx-auto mt-10 flex max-w-screen-xl flex-col gap-8 px-4 py-14 md:px-8">
 		<div class="mx-auto max-w-5xl text-center">
 			<h4 class="text-xl font-bold tracking-tight text-black dark:text-white">Pricing</h4>
 
