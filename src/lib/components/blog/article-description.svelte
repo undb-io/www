@@ -1,15 +1,19 @@
 <script lang="ts">
+	import Button from '../ui/button/button.svelte';
+
 	export let description: string;
 	export let slug = '';
 
 	const href = slug && `/blog/${slug}`;
 </script>
 
-<p>
-	{description}
+<p class="space-y-2">
+	<span class="flex">
+		{description}
+	</span>
 
 	{#if slug}
-		<a {href}>Read More &rarr;</a>
+		<Button size="sm" variant="secondary" {href}>Read More &rarr;</Button>
 	{/if}
 </p>
 
