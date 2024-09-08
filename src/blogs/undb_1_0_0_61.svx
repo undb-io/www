@@ -1,0 +1,39 @@
+---
+title: 'Undb Update: Kanban View and Key UI Enhancements'
+description: 'Undb Update: Kanban View and Key UI Enhancements'
+date: '2024-09-08'
+categories:
+  - undb
+  - bun
+  - sqlite
+  - esmodule
+  - commonjs
+published: true
+author: 'Undb'
+---
+
+
+**undb Version 1.0.0-61: Introducing Kanban View and Key UI Enhancements**
+
+We’re thrilled to announce the release of **undb Version X.X**, bringing an array of exciting new features and important bug fixes to enhance your no-code experience. Whether you're managing data or building an application, this update improves both functionality and usability. Here's what's new in this version:
+
+### 🚀 **Key Features**
+
+#### 1. Kanban View
+The highlight of this release is the **Kanban view**, which offers a more intuitive way to manage tasks, projects, and workflows. This view introduces several powerful features:
+- **Drag-and-drop sorting**: Easily reorganize tasks or records by dragging them across lanes.
+- **Create and delete options directly**: You can now add or remove options within the Kanban view without switching to other interfaces.
+- **Paginated lane loading**: For larger datasets, lanes can now load in pages, ensuring smooth performance even with extensive records.
+
+#### 2. UI Enhancements for Views
+We’ve refined the experience around views in undb:
+- **Updated UI for updating and copying views**: It’s now easier and faster to modify and duplicate views, thanks to our redesigned user interface.
+- **Improved form management**: The ability to **delete forms** has been introduced, giving you more control over your form configurations.
+
+### 🛠️ **Bug Fixes**
+
+- **No more duplicate names**: We’ve squashed the bug that allowed duplicate names across tables and fields, ensuring better data integrity.
+
+### ⚙️ **Performance and Usability Improvements**
+
+In addition to the new Kanban features and UI updates, we’ve made several performance improvements that make undb more efficient to use, even for complex projects.
