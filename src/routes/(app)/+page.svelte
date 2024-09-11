@@ -6,6 +6,7 @@
 	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
 	import StackSection from '$lib/components/landing/StackSection.svelte';
 	import TemplateSection from '$lib/components/landing/TemplateSection.svelte';
+	import ViewsSection from '$lib/components/landing/ViewsSection.svelte';
 </script>
 
 <svelte:head>
@@ -27,7 +28,10 @@
 </svelte:head>
 <HeroSection />
 <SphereMask />
+<ViewsSection />
+<SphereMask />
 <TemplateSection />
+<SphereMask />
 <PricingSection />
 <SphereMask />
 <RoadmapSection />
