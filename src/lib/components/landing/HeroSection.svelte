@@ -13,8 +13,8 @@
 	import { inview } from 'svelte-inview';
 
 	// Images
-	import HeroDarkImg from '$lib/imgs/hero.png';
-	import HeroLightImg from '$lib/imgs/hero.png';
+	import HeroDarkImg from '$lib/imgs/hero.jpeg';
+	import HeroLightImg from '$lib/imgs/hero.jpeg';
 	import DotPattern from '../magic/DotPattern.svelte';
 	import AnimatedGradientText from '../magic/AnimatedGradientText.svelte';
 	import { cn } from '$lib/utils';
