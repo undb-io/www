@@ -1,7 +1,6 @@
 <script>
 	import { Calendar, Plane, Rss, ReceiptText } from 'lucide-svelte';
 	import { Button } from '$lib/components/ui/button';
-	import FlipText from '$lib/components/magic/FlipText.svelte';
 	import BentoGrid from '$lib/components/magic/BentoGrid/BentoGrid.svelte';
 	import BentoCard from '$lib/components/magic/BentoGrid/BentoCard.svelte';
 
@@ -51,10 +50,11 @@
 </script>
 
 <section class="container space-y-6">
-	<FlipText
-		class="text-3xl font-semibold tracking-[-0.1em] text-black dark:text-white md:text-7xl md:leading-[5rem]"
-		word="Get started with templates"
-	/>
+	<h1
+		class="text-center text-3xl font-semibold text-black dark:text-white md:text-7xl md:leading-[5rem]"
+	>
+		Get started with templates
+	</h1>
 
 	<p class="text-center text-lg text-gray-500 dark:text-gray-400">
 		You can use templates to get started with your project.
