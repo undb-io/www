@@ -17,21 +17,3 @@
 <div class="mt-10 space-y-6">
 	<svelte:component this={component} />
 </div>
-
-<style>
-	:global(p) {
-		line-height: 32px;
-	}
-
-	:global(h1) {
-		@apply text-2xl font-bold;
-	}
-
-	:global(h2) {
-		@apply text-xl font-bold;
-	}
-
-	:global(h3) {
-		@apply text-lg font-bold;
-	}
-</style>
