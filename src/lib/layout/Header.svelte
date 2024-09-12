@@ -2,7 +2,7 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { cn } from '$lib/utils';
 	import Logo from '$lib/imgs/logo.svg';
-	import { AlignJustify, BookIcon, CloudyIcon, XIcon } from 'lucide-svelte';
+	import { AlignJustify, BookIcon, BugIcon, CloudyIcon, XIcon } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
 
 	export let loggedIn = false;
@@ -27,6 +27,11 @@
 			id: 4,
 			label: 'Get Started',
 			href: 'https://app.undb.io'
+		},
+		{
+			id: 5,
+			label: 'Report a bug',
+			href: 'https://app.undb.io/s/f/shrf0ox7sbuapqy'
 		}
 	];
 
@@ -89,6 +94,16 @@
 				Pricing
 			</Button>
 			<Button variant="link" class="inline-flex items-center text-sm" href="/blog">Blog</Button>
+			<Button
+				variant="link"
+				class="ml-3 text-sm"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://app.undb.io/s/f/shrf0ox7sbuapqy"
+			>
+				<BugIcon class="mr-2 h-4 w-4" />
+				Report a bug
+			</Button>
 			<Button
 				variant="secondary"
 				class="ml-3 text-sm"
