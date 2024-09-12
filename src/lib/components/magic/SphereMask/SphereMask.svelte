@@ -7,13 +7,15 @@
 	class={cn(
 		// color
 		'[--color:var(--color-one)]',
-		'pointer-events-none relative  mx-auto h-[50rem] overflow-hidden',
+		'pointer-events-none relative mx-auto h-[30rem] overflow-hidden sm:h-[40rem] md:h-[50rem]',
 
 		// sphere mask
 		'[mask-image:radial-gradient(ellipse_at_center_center,#000,transparent_50%)]',
 
 		// reverse
-		reverse ? 'my-[-22rem] rotate-180 md:mt-[-30rem]' : 'my-[-18.8rem]',
+		reverse
+			? 'my-[-12rem] rotate-180 sm:my-[-16rem] md:my-[-22rem] md:mt-[-30rem]'
+			: 'my-[-10rem] sm:my-[-14rem] md:my-[-18.8rem]',
 
 		// before
 		'before:absolute before:inset-0 before:size-full before:opacity-40 before:[background-image:radial-gradient(circle_at_bottom_center,var(--color),transparent_70%)]',

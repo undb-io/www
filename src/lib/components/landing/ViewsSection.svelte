@@ -64,7 +64,7 @@
 	}
 </script>
 
-<section class="container mx-auto px-4 py-16">
+<section class="container mx-auto hidden px-4 py-16 md:block">
 	<h2 class="mb-8 text-5xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
 		Diverse View Options
 	</h2>
@@ -112,4 +112,37 @@
 			</TabsContent>
 		{/each}
 	</Tabs>
+</section>
+
+<section class="container mx-auto px-4 py-4 md:hidden md:py-16">
+	<h2 class="mb-8 text-4xl font-bold tracking-tight text-black dark:text-white">
+		Diverse View Options
+	</h2>
+	<p class="mb-8 text-left text-base text-gray-600">
+		Undb offers a variety of views to suit different needs. Whether you need a simple grid view, or
+		a more complex kanban view, Undb has you covered.
+	</p>
+
+	<div class="relative">
+		{#each views as view, index}
+			<div class="mb-8 {activeTab === view.name ? 'block' : 'hidden'}">
+				<img src={view.image} alt={view.name} class="w-full rounded-lg shadow-lg" />
+				<div class="mt-4 text-center">
+					<h3 class="mb-2 text-xl font-bold">{view.name}</h3>
+					<p class="text-sm text-gray-600">{view.description}</p>
+				</div>
+			</div>
+		{/each}
+
+		<div class="mt-4 flex justify-center">
+			{#each views as view, index}
+				<button
+					class="mx-1 h-3 w-3 rounded-full {activeTab === view.name
+						? 'bg-blue-600'
+						: 'bg-gray-300'}"
+					on:click={() => handleTabChange(view.name)}
+				></button>
+			{/each}
+		</div>
+	</div>
 </section>
