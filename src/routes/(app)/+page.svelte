@@ -7,6 +7,7 @@
 	import StackSection from '$lib/components/landing/StackSection.svelte';
 	import TemplateSection from '$lib/components/landing/TemplateSection.svelte';
 	import ViewsSection from '$lib/components/landing/ViewsSection.svelte';
+	import SubmitBugSection from '$lib/components/landing/SubmitBugSection.svelte';
 </script>
 
 <svelte:head>
@@ -35,4 +36,7 @@
 <PricingSection />
 <SphereMask />
 <RoadmapSection />
+<SphereMask />
 <StackSection />
+<SphereMask />
+<SubmitBugSection />
