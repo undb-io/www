@@ -10,6 +10,14 @@
 	$: component = data.component as unknown as C;
 </script>
 
+<svelte:head>
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@unified_undb" />
+	<meta name="twitter:title" content={data.frontmatter.title} />
+	<meta name="twitter:description" content={data.frontmatter.description} />
+	<meta name="twitter:image" content="https://undb.io/images/banner.png" />
+</svelte:head>
+
 <BlogHeader title={data.frontmatter.title} description={data.frontmatter.description} />
 <ArticleTitle title={data.frontmatter.title} />
 <ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
