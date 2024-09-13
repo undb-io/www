@@ -1,0 +1,126 @@
+---
+title: 'undb Introduces New Gallery View: A Visual Way to Manage Your Image Data'
+description: 'undb Introduces New Gallery View: A Visual Way to Manage Your Image Data. We are excited to announce the release of undb version 1.0.0-70, which introduces a new Gallery view for managing image data. This update enhances your data management capabilities, providing a more intuitive and user-friendly interface for handling image data.'
+date: '2024-09-13'
+categories:
+  - undb
+  - gallery
+published: true
+author: 'Undb'
+---
+
+# undb Introduces New Gallery View: A Visual Way to Manage Your Image Data
+
+Dear undb Users,
+
+We are thrilled to announce the launch of our **new Gallery View**! This feature allows you to select an attachment column and display the images within it as the main part of cards, presenting your data in a visually appealing and intuitive way.
+
+## What is Gallery View?
+
+Gallery View is a new way to display your data tables in undb. When your data table contains an attachment column with images, you can set this column as the primary visual element in the Gallery View. Each record in your data will be displayed as a card, with the image prominently featured. This makes it easier than ever to browse and manage data rich in visual content.
+
+![gallery-view](/blogs/20240913/gallery.png)
+
+## Key Features of Gallery View
+
+### 1. Image-Centric Cards
+
+- **Visual Focus**: Display images from your attachment column as the main element on each card.
+- **Detailed Information**: Alongside the image, display key fields such as title, description, price, and more.
+- **Clean Layout**: Enjoy a neat and organized card layout that adapts to different screen sizes.
+
+### 2. Customizable Card Content
+
+- **Field Selection**: Choose which fields to display on the cards to highlight the most important information.
+- **Style Customization**: Adjust card size, spacing, and layout to suit your presentation needs.
+- **Interactive Actions**: Edit, delete, or perform other actions directly on the cards for efficient data management.
+
+### 3. Easy Filtering and Sorting
+
+- **Multi-Condition Filtering**: Quickly locate specific data by filtering based on various fields.
+- **Custom Sorting**: Arrange cards in your preferred order using fields like upload time, name, or category.
+- **Tag Management**: Add tags to images for better categorization and retrieval.
+
+### 4. Seamless Data Updates
+
+- **Real-Time Sync**: Any updates in your data table are instantly reflected in the Gallery View.
+- **Batch Operations**: Upload, delete, or modify images in bulk to streamline your workflow.
+- **Access Control**: Protect sensitive data by setting view and edit permissions for authorized users only.
+
+## Use Cases for Gallery View
+
+### 1. Product Showcase
+
+E-commerce platforms and sales teams can use Gallery View to display product images along with essential information like name, price, and stock levels, making inventory management and sharing more efficient.
+
+### 2. Portfolio Management
+
+Designers, photographers, and artists can present their work visually, with images front and center, facilitating easy sharing with clients or team members.
+
+### 3. Employee Directory
+
+Human Resources can create an employee photo wall, displaying staff photos alongside names, positions, and contact details to enhance internal communication and help new employees familiarize themselves with the team.
+
+### 4. Event Albums
+
+Document company events, training sessions, or meetings by uploading photos and displaying them in Gallery View, categorized by time or theme to create a memorable event album.
+
+## How to Get Started with Gallery View
+
+1. **Log in to your undb account**: Visit [undb's website](https://www.undb.io) and log in. If you don't have an account yet, feel free to sign up.
+
+2. **Access your data table**: Choose the data table that contains image attachments, or create a new one and upload your images.
+
+3. **Configure Gallery View**:
+
+   - Click on the view settings and select **"Gallery View"**.
+   - Specify the attachment column that contains your images.
+   - Select other key fields to display on the cards, such as title or description.
+
+4. **Customize Card Style**: Adjust the layout and style of the cards according to your preferences.
+
+5. **Save and Use**: After configuring, save your settings and start using the Gallery View to browse and manage your images.
+
+For detailed instructions, please refer to our [Gallery View Documentation](https://docs.undb.io/view/gallery/).
+
+## Upcoming Features
+
+We are actively working on additional features to enhance your experience with Gallery View:
+
+- **Advanced Editor**: Edit images directly within undb, including cropping, rotating, and applying filters.
+
+- **Slideshow Mode**: Add slideshow functionality for full-screen viewing and presentations.
+
+- **Comments and Annotations**: Allow users to add comments and annotations on images to facilitate team collaboration and feedback.
+
+- **External Sharing**: Generate public links or embed codes to share your Gallery View on websites or social media.
+
+## Real-World Use Cases
+
+### Case Study 1: Creative Studio Portfolio
+
+A creative design studio uses undb's Gallery View to manage their portfolio. Each project includes images of their design work, along with project titles, client names, and completion dates. With Gallery View, team members can easily browse all projects, stay updated on progress, and present their work during meetings or client presentations.
+
+### Case Study 2: E-commerce Product Management
+
+An online retailer utilizes Gallery View to display and manage their product catalog. Product images, names, prices, and stock levels are all visible on the cards. Filtering and sorting features allow the team to quickly identify products that need restocking or updating, greatly improving operational efficiency.
+
+### Case Study 3: Educational Institution Event Gallery
+
+An educational institution uploads photos of campus events to undb and uses Gallery View to display them. Students and parents can view highlights from events, and the school can embed the gallery on their website or social media platforms to enhance engagement and promotion.
+
+## Your Feedback Matters
+
+The release of Gallery View wouldn't have been possible without your support and suggestions. We invite you to share your experiences and thoughts with us as you start using this new feature. Your feedback is invaluable in helping us improve and provide better services.
+
+## Contact Us
+
+- **Email**: hi@undb.io
+- **Community Forum**: [undb Community](https://community.undb.io)
+- **User Guide**: [Gallery View Documentation](https://docs.undb.io/view/gallery/)
+
+Thank you for your continued support and trust in undb. We are committed to bringing you more innovative and practical features.
+
+Happy exploring!
+
+**The undb Team**
