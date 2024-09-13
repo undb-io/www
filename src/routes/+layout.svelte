@@ -7,6 +7,7 @@
 	import type { LayoutData } from './$types';
 	import Footer from '$lib/layout/Footer.svelte';
 	import Header from '$lib/layout/Header.svelte';
+	import { dev } from '$app/environment';
 
 	export let data: LayoutData;
 
@@ -22,7 +23,9 @@
 </script>
 
 <svelte:head>
-	<script defer src="https://cloud.umami.is/script.js" data-website-id="04d52d33-eb58-4ea4-a369-3fa158bf3a02"></script>
+	{#if !dev}
+		<script defer src="/script.js" data-website-id="04d52d33-eb58-4ea4-a369-3fa158bf3a02"></script>
+	{/if}
 </svelte:head>
 
 <div class="flex min-h-screen flex-col bg-background pt-16 font-sans antialiased">
