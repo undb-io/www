@@ -21,6 +21,10 @@
 	});
 </script>
 
+<svelte:head>
+	<script defer src="https://cloud.umami.is/script.js" data-website-id="04d52d33-eb58-4ea4-a369-3fa158bf3a02"></script>
+</svelte:head>
+
 <div class="flex min-h-screen flex-col bg-background pt-16 font-sans antialiased">
 	<Header loggedIn={data.loggedIn} />
 
