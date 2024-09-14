@@ -1,0 +1,49 @@
+---
+title: 'Undb 1.0.0-71: Submit form openapi'
+description: 'Undb 1.0.0-71: Submit form openapi. This release introduces a new feature that allows you to submit form data via OpenAPI.'
+date: '2024-09-14'
+categories:
+  - undb
+  - form
+published: true
+author: 'Undb'
+---
+
+In our latest release, undb now supports submitting forms via OpenAPI, offering developers a more flexible and type-safe way to interact with forms. With this feature, OpenAPI calls are automatically generated to match the form structure, making it easier to ensure that the data submission adheres strictly to the form’s settings, including `required`, `hidden`, and other constraints.
+
+<img src="/blogs/20240914/form.png" alt="form submit openapi" />
+
+### Why Submit Forms via OpenAPI?
+
+Forms are a common way of collecting data in applications, and submitting them through OpenAPI brings automation and ensures that field constraints, such as required fields and hidden inputs, are respected during submission. Even if a form contains 200 fields, but only 1 field is visible and required, OpenAPI will only require that one field for submission, without needing to handle the other 199 fields. This not only improves efficiency but also reduces the risk of errors.
+
+### Key Features
+
+1. **Automatic Handling of Field Constraints**
+   When using the API generated from OpenAPI, you only need to submit the fields that are visible and necessary for the form. OpenAPI automatically enforces constraints like `required` fields, ensuring that essential data is included. The form’s structure, such as required fields and hidden fields, is respected, so developers don’t need to manually handle these checks.
+
+2. **Type Safety**
+   OpenAPI generates type definitions that match the form, ensuring compile-time validation. This means that any mismatch between the expected type and the data being submitted will be caught early. For instance, if a field is defined as an integer, you cannot accidentally submit a string, ensuring consistency between the frontend form and backend API.
+
+3. **Hidden Fields Support**
+   Hidden fields defined in the form are automatically excluded from the API request. This ensures that if the form has fields that are not visible or filled out by the user, you don't need to worry about submitting or handling them. OpenAPI will only submit what’s necessary, easing the burden on developers.
+
+4. **Support for Dynamic Forms**
+   Forms can change dynamically based on user input or other conditions, showing or hiding fields. Regardless of how the form changes, OpenAPI ensures that only the currently visible and relevant fields are submitted. Even in forms with hundreds of fields, the API request will only include the fields the user interacts with.
+
+### Example Use Case
+
+Imagine a form with 200 fields, most of which are optional or dynamically shown based on user roles. When the form is submitted, only the visible and required fields need to be sent. With OpenAPI, you don’t need to manually define which fields to include—OpenAPI will automatically handle the request based on the form’s current state. For instance, if the user only fills out their name and email, the API request might look like this:
+
+```json
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com"
+}
+```
+
+Fields that are optional or hidden will not be included, ensuring a clean and efficient API call.
+
+### Conclusion
+
+Submitting forms via OpenAPI in undb is a powerful feature that offers developers a highly flexible, type-safe, and simplified approach to form submissions. No matter how complex your form structure is, OpenAPI ensures that only the relevant fields are submitted, respecting form constraints like `required` and `hidden` fields. This functionality significantly improves development efficiency, especially when working with large, complex forms.
