@@ -33,8 +33,8 @@
 	<meta name="twitter:description" content={data.template.description} />
 </svelte:head>
 
-<div class="flex w-full justify-between">
-	<h1 class="flex items-center gap-2 text-5xl font-bold">
+<div class="flex w-full flex-col justify-between gap-4 md:flex-row">
+	<h1 class="flex gap-2 text-5xl font-bold md:items-center">
 		<span>
 			{data.template.icon}
 		</span>
@@ -43,16 +43,16 @@
 		</span>
 	</h1>
 
-	<Button class="w-80" href={`${env.PUBLIC_UNDB_URL}/templates/${data.template.id}`}>
+	<Button class="md:w-80" href={`${env.PUBLIC_UNDB_URL}/templates/${data.template.id}`}>
 		View template
 	</Button>
 </div>
 
-<p class="text-md w-1/2 text-muted-foreground">{data.template.description}</p>
+<p class="text-md text-muted-foreground md:w-1/2">{data.template.description}</p>
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 	<div>
-		<div class="mt-8">
+		<div class="md:mt-8">
 			<div class="prose prose-sm max-w-none">
 				{@html data.template.detail}
 			</div>
