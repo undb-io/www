@@ -14,7 +14,7 @@
 			Icon: Calendar,
 			name: 'Project Management',
 			description: 'Manage your projects with ease.',
-			href: 'https://template.undb.io/template/rechc0mi1ar',
+			href: '/templates/550e8400-e29b-41d4-a716-446655440000',
 			cta: 'Get started with template',
 			background: ProjectManagement,
 			class: 'col-span-3 lg:col-span-1'
@@ -23,25 +23,25 @@
 			Icon: ReceiptText,
 			name: 'Todo List',
 			description: 'Effortlessly manage your personal daily tasks',
-			href: 'https://template.undb.io/template/recjqk5altb',
+			href: '/templates/6ba7b811-9dad-11d1-80b4-00c04fd430c8',
 			cta: 'Get started with template',
 			background: TodoList,
 			class: 'col-span-3 lg:col-span-2'
 		},
 		{
 			Icon: Plane,
-			name: 'Trip Plan',
-			description: 'Plan your next trip with ease.',
-			href: 'https://template.undb.io/template/recp3km4vvc',
-			cta: 'Edit More',
+			name: 'Sales CRM',
+			description: 'Manage your sales pipeline and customer relationships.',
+			href: '/templates/f47ac10b-58cc-4372-a567-0e02b2c3d479',
+			cta: 'Get started with template',
 			background: TripPlan,
 			class: 'col-span-3 lg:col-span-2'
 		},
 		{
 			Icon: Rss,
-			name: 'Subscription Tracker',
-			description: 'Track your subscriptions of your online services.',
-			href: 'https://template.undb.io/template/rec98waw9mb',
+			name: 'Event Planning List',
+			description: 'Plan your next event planning.',
+			href: '/templates/6ba7b810-9dad-11d1-80b4-00c04fd430c8',
 			cta: 'Get started with template',
 			background: SubscriptionTracker,
 			class: 'col-span-3 lg:col-span-1'
