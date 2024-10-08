@@ -16,7 +16,7 @@
 		{
 			id: 2,
 			label: 'Template',
-			href: 'https://template.undb.io'
+			href: '/templates'
 		},
 		{
 			id: 3,
@@ -80,7 +80,7 @@
 				class="inline-flex items-center text-sm"
 				target="_blank"
 				rel="noopener noreferrer"
-				href="https://template.undb.io"
+				href="/templates"
 			>
 				Template
 			</Button>

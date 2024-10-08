@@ -61,7 +61,7 @@
 	</p>
 
 	<div class="flex items-center justify-center">
-		<Button href="https://template.undb.io">🚀 View all templates</Button>
+		<Button href="/templates">🚀 View all templates</Button>
 	</div>
 
 	<div class="flex items-center justify-center">

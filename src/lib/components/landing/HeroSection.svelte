@@ -94,7 +94,7 @@
 		</Button>
 		<Button
 			variant="outline"
-			href="https://template.undb.io"
+			href="/templates"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="-translate-y-4 animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]"
