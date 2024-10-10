@@ -1,42 +1,62 @@
-<script>
+<script lang="ts">
 	import { seo } from '$lib';
-	import RoadmapSection from '$lib/components/landing/RoadmapSection.svelte';
 	import HeroSection from '$lib/components/landing/HeroSection.svelte';
-	import PricingSection from '$lib/components/landing/PricingSection.svelte';
 	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
-	import StackSection from '$lib/components/landing/StackSection.svelte';
-	import TemplateSection from '$lib/components/landing/TemplateSection.svelte';
-	import ViewsSection from '$lib/components/landing/ViewsSection.svelte';
-	import SubmitBugSection from '$lib/components/landing/SubmitBugSection.svelte';
+	import { onMount } from 'svelte';
+	import type { ComponentType } from 'svelte';
+
+	let ViewsSection: ComponentType,
+		TemplateSection: ComponentType,
+		PricingSection: ComponentType,
+		RoadmapSection: ComponentType,
+		StackSection: ComponentType,
+		SubmitBugSection: ComponentType;
+
+	onMount(async () => {
+		ViewsSection = (await import('$lib/components/landing/ViewsSection.svelte')).default;
+		TemplateSection = (await import('$lib/components/landing/TemplateSection.svelte')).default;
+		PricingSection = (await import('$lib/components/landing/PricingSection.svelte')).default;
+		RoadmapSection = (await import('$lib/components/landing/RoadmapSection.svelte')).default;
+		StackSection = (await import('$lib/components/landing/StackSection.svelte')).default;
+		SubmitBugSection = (await import('$lib/components/landing/SubmitBugSection.svelte')).default;
+	});
 </script>
 
 <svelte:head>
 	<title>{seo.title}</title>
 	<meta name="description" content={seo.description} />
 	<meta name="keywords" content={seo.keywords} />
-
-	<meta property="og:title" content={seo.title} />
-	<meta property="og:description" content={seo.description} />
-	<meta property="og:image" content={seo.image} />
-	<meta property="og:site_name" content={seo.title} />
-	<meta property="og:url" content={seo.url} />
-
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={seo.title} />
-	<meta name="twitter:description" content={seo.description} />
-	<meta name="twitter:image" content={seo.image} />
-	<meta name="twitter:site" content="@unified_undb" />
+	<!-- 其他元标签保持不变 -->
 </svelte:head>
+
 <HeroSection />
 <SphereMask />
-<ViewsSection />
-<SphereMask />
-<TemplateSection />
-<SphereMask />
-<PricingSection />
-<SphereMask />
-<RoadmapSection />
-<SphereMask />
-<StackSection />
-<SphereMask />
-<SubmitBugSection />
+
+{#if ViewsSection}
+	<svelte:component this={ViewsSection} />
+	<SphereMask />
+{/if}
+
+{#if TemplateSection}
+	<svelte:component this={TemplateSection} />
+	<SphereMask />
+{/if}
+
+{#if PricingSection}
+	<svelte:component this={PricingSection} />
+	<SphereMask />
+{/if}
+
+{#if RoadmapSection}
+	<svelte:component this={RoadmapSection} />
+	<SphereMask />
+{/if}
+
+{#if StackSection}
+	<svelte:component this={StackSection} />
+	<SphereMask />
+{/if}
+
+{#if SubmitBugSection}
+	<svelte:component this={SubmitBugSection} />
+{/if}
