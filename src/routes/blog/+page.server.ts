@@ -1,7 +1,7 @@
 import { slugFromPath } from '$lib/slugFromPath';
 import type { PageServerLoad } from './$types';
 
-const MAX_POSTS = 10;
+const MAX_POSTS = 100;
 
 export const load: PageServerLoad = async () => {
 	const modules = import.meta.glob(`/src/blogs/*.{md,svx,svelte.md}`);
