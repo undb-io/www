@@ -46,6 +46,7 @@
 		"mini-svg-data-uri": "^1.4.4",
 		"mixpanel-browser": "^2.55.1",
 		"mode-watcher": "^0.4.1",
+		"simple-icons": "^13.13.0",
 		"svelte-inview": "^4.0.2",
 		"svelte-motion": "^0.12.2",
 		"svelte-sonner": "^0.3.27",

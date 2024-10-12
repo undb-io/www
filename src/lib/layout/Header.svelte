@@ -4,6 +4,8 @@
 	import Logo from '$lib/imgs/logo.svg';
 	import { AlignJustify, BookIcon, BugIcon, CloudyIcon, XIcon } from 'lucide-svelte';
 	import { fly } from 'svelte/transition';
+	import DiscordSvg from '$lib/imgs/discord.svg';
+	import GithubSvg from '$lib/imgs/github-dark.svg';
 
 	export let loggedIn = false;
 
@@ -30,8 +32,18 @@
 		},
 		{
 			id: 5,
-			label: 'Report a bug',
-			href: 'https://app.undb.io/s/f/shrf0ox7sbuapqy'
+			label: 'Blog',
+			href: '/blog'
+		},
+		{
+			id: 6,
+			label: 'Github',
+			href: 'https://github.com/undb-io/undb'
+		},
+		{
+			id: 7,
+			label: 'Discord',
+			href: 'https://discord.gg/3rcNdU3y3U'
 		}
 	];
 
@@ -95,16 +107,6 @@
 			</Button>
 			<Button variant="link" class="inline-flex items-center text-sm" href="/blog">Blog</Button>
 			<Button
-				variant="link"
-				class="ml-3 text-sm"
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://app.undb.io/s/f/shrf0ox7sbuapqy"
-			>
-				<BugIcon class="mr-2 h-4 w-4" />
-				Report a bug
-			</Button>
-			<Button
 				variant="secondary"
 				class="ml-3 text-sm"
 				target="_blank"
@@ -118,6 +120,23 @@
 					Get Started
 				{/if}
 			</Button>
+
+			<a
+				href="https://discord.gg/3rcNdU3y3U"
+				class="ml-4 size-6 text-muted-foreground"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<img src={DiscordSvg} alt="Discord" />
+			</a>
+			<a
+				href="https://github.com/undb-io/undb"
+				class="ml-4 size-6 text-muted-foreground"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<img src={GithubSvg} alt="Github" />
+			</a>
 		</div>
 		<button class="ml-6 md:hidden" use:toggleOverflowHidden>
 			<span class="sr-only">Toggle menu</span>

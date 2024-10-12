@@ -58,7 +58,7 @@
 	<p
 		class="mb-12 -translate-y-4 animate-fade-in text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl"
 	>
-		Private first, local first, open source.
+		Private first open source
 		<br class="hidden md:block" />
 		Nocode platform & BaaS you can host yourself.
 	</p>
@@ -70,7 +70,7 @@
 			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 		>
 			<CloudyIcon class="mr-2 h-4 w-4" />
-			<span>Try undb cloud for free </span>
+			<span>Try undb cloud for free</span>
 			<ArrowRightIcon
 				class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
 			/>
@@ -84,26 +84,6 @@
 		>
 			<BookIcon class="mr-2 h-4 w-4" />
 			<span>Documentation</span>
-		</Button>
-		<Button
-			variant="outline"
-			href="/templates"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="-translate-y-4 animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]"
-		>
-			<PackageIcon class="mr-2 h-4 w-4" />
-			<span>Template</span>
-		</Button>
-		<Button
-			variant="outline"
-			href="https://github.com/undb-io/undb"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="-translate-y-4 animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]"
-		>
-			<GithubIcon class="mr-2 h-4 w-4" />
-			<span>Github</span>
 		</Button>
 	</div>
 
