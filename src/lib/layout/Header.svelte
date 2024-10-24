@@ -87,13 +87,7 @@
 				<BookIcon class="mr-2 h-4 w-4" />
 				Documentation
 			</Button>
-			<Button
-				variant="link"
-				class="inline-flex items-center text-sm"
-				target="_blank"
-				rel="noopener noreferrer"
-				href="/templates"
-			>
+			<Button variant="link" class="inline-flex items-center text-sm" href="/templates">
 				Template
 			</Button>
 			<Button
