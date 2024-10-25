@@ -3,14 +3,14 @@
 	import HeroSection from '$lib/components/landing/HeroSection.svelte';
 	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
 	import { onMount } from 'svelte';
-	import type { ComponentType } from 'svelte';
+	import type { Component } from 'svelte';
 
-	let ViewsSection: ComponentType,
-		TemplateSection: ComponentType,
-		PricingSection: ComponentType,
-		RoadmapSection: ComponentType,
-		StackSection: ComponentType,
-		SubmitBugSection: ComponentType;
+	let ViewsSection: Component,
+		TemplateSection: Component,
+		PricingSection: Component,
+		RoadmapSection: Component,
+		StackSection: Component,
+		SubmitBugSection: Component;
 
 	onMount(async () => {
 		ViewsSection = (await import('$lib/components/landing/ViewsSection.svelte')).default;
