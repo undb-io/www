@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { seo } from '$lib';
 	import HeroSection from '$lib/components/landing/HeroSection.svelte';
+	import RoadmapSection from '$lib/components/landing/RoadmapSection.svelte';
 	import SphereMask from '$lib/components/magic/SphereMask/SphereMask.svelte';
-	import { onMount } from 'svelte';
-	import type { Component } from 'svelte';
+	import ViewsSection from '$lib/components/landing/ViewsSection.svelte';
+	import TemplateSection from '$lib/components/landing/TemplateSection.svelte';
+	import PricingSection from '$lib/components/landing/PricingSection.svelte';
+	import StackSection from '$lib/components/landing/StackSection.svelte';
+	import SubmitBugSection from '$lib/components/landing/SubmitBugSection.svelte';
 </script>
 
 <svelte:head>
@@ -16,31 +20,19 @@
 <HeroSection />
 <SphereMask />
 
-{#await import('$lib/components/landing/ViewsSection.svelte') then { default: ViewsSection }}
-	<ViewsSection />
-	<SphereMask />
-{/await}
+<ViewsSection />
+<SphereMask />
 
-<!-- {#if TemplateSection}
-	<svelte:component this={TemplateSection} />
-	<SphereMask />
-{/if}
+<TemplateSection />
+<SphereMask />
 
-{#if PricingSection}
-	<svelte:component this={PricingSection} />
-	<SphereMask />
-{/if}
+<PricingSection />
+<SphereMask />
 
-{#if RoadmapSection}
-	<svelte:component this={RoadmapSection} />
-	<SphereMask />
-{/if}
+<RoadmapSection />
+<SphereMask />
 
-{#if StackSection}
-	<svelte:component this={StackSection} />
-	<SphereMask />
-{/if}
+<StackSection />
+<SphereMask />
 
-{#if SubmitBugSection}
-	<svelte:component this={SubmitBugSection} />
-{/if} -->
+<SubmitBugSection />
