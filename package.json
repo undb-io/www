@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "bun --bun vite dev",
+		"dev": "bun --bun gvite dev",
 		"build": "bun --bun vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -57,6 +57,7 @@
 		"zod": "^3.23.8"
 	},
 	"optionalDependencies": {
+		"@cloudflare/workerd-linux-64": "latest",
 		"@rollup/rollup-linux-x64-gnu": "^4.24.0"
 	}
 }
