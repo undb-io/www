@@ -1,5 +1,5 @@
 {
-	"name": "startup-template",
+	"name": "www",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -55,9 +55,5 @@
 		"tailwind-variants": "^0.2.1",
 		"tailwindcss-animate": "^1.0.7",
 		"zod": "^3.23.8"
-	},
-	"optionalDependencies": {
-		"@cloudflare/workerd-linux-64": "latest",
-		"@rollup/rollup-linux-x64-gnu": "^4.24.0"
 	}
 }
