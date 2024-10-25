@@ -55,5 +55,8 @@
 		"tailwind-variants": "^0.2.1",
 		"tailwindcss-animate": "^1.0.7",
 		"zod": "^3.23.8"
+	},
+	"optionalDependencies": {
+		"@rollup/rollup-linux-x64-gnu": "^4.24.0"
 	}
 }
