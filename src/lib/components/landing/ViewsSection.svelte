@@ -3,7 +3,13 @@
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { linear } from 'svelte/easing';
-	import { GridIcon, KanbanIcon, GalleryThumbnailsIcon, FormInputIcon } from 'lucide-svelte';
+	import {
+		GridIcon,
+		KanbanIcon,
+		GalleryThumbnailsIcon,
+		FormInputIcon,
+		CalendarIcon
+	} from 'lucide-svelte';
 
 	const views = [
 		{
@@ -17,6 +23,12 @@
 			description: 'Organize your data into columns and cards.',
 			image: '/images/views/kanban-view.jpeg',
 			icon: KanbanIcon
+		},
+		{
+			name: 'Calendar View',
+			description: 'View and manage your data and events in a calendar format.',
+			image: '/images/views/calendar.jpeg',
+			icon: CalendarIcon
 		},
 		{
 			name: 'Gallery View',
@@ -75,7 +87,7 @@
 	</p>
 
 	<Tabs value={activeTab} onValueChange={handleTabChange} class="w-full bg-transparent">
-		<TabsList class="mb-8 grid h-28 w-full grid-cols-4 gap-4	bg-transparent">
+		<TabsList class="mb-8 grid h-28 w-full grid-cols-5 gap-4	bg-transparent">
 			{#each views as view}
 				<div class="flex h-full flex-col justify-between">
 					<TabsTrigger
