@@ -1,0 +1,76 @@
+---
+title: 'Undb Formula: New Formula Field'
+description: 'Undb Update: New Formula Field Type which supports basic math operations and functions'
+date: '2024-11-07'
+categories:
+  - undb
+  - field
+  - formula
+published: true
+author: 'Undb'
+---
+
+# Unlock Dynamic Data with undb's New Formula Field
+
+In today's data-driven world, having flexible and powerful tools at your fingertips is essential for getting the most out of your information. undb's new Formula field is designed to bring a new level of dynamism and automation to your data, enabling you to easily create calculated fields and perform custom operations based on your unique needs. Whether you're calculating totals, performing logical operations, or manipulating text, the Formula field puts all of that power directly in your hands.
+
+<img src="/blogs/20241107/formula.gif" alt="shows how to create a formula field" />
+
+## What is the Formula Field in undb?
+
+The Formula field in undb lets you create dynamic fields where the value is calculated based on other data in the table. It uses a powerful formula system that includes various mathematical, text, and logical functions to suit a wide range of needs. From basic arithmetic to string manipulation and conditional logic, this field type brings the flexibility you need to manage and transform data in real time.
+
+## Key Features of undb's Formula Field
+
+1. Built-In Functions: undb offers a robust set of functions, making it easy to set up complex formulas.
+2. Field References: Directly reference other fields in your formula using a simple syntax, making it easy to build formulas that react to your data.
+3. Operator Support: Perform arithmetic and logical operations, and handle text transformations all within one field.
+
+## Getting Started with the Formula Field
+
+Here's how to create a Formula field in undb and start building your first formulas:
+
+1. Select Formula as the field type.
+2. Open the Formula Editor and begin entering your formula.
+3. Combine functions, operators, and other field references to create the desired output.
+
+## Functions Reference: A Glimpse of What You Can Do
+
+undb's formula field offers a variety of built-in functions across different categories. Here are a few examples to get you inspired:
+
+### Mathematical Functions
+
+- **ADD**: Quickly add two numbers. Perfect for creating running totals or performing calculations between fields. Example: `ADD(5, {{quantity}})`.
+- **ROUND**: Round a number to a specific number of decimal places for clean, consistent data. Example: `ROUND({{price}}, 2)`.
+- **POWER**: Raise a number to a certain power, useful in scenarios involving growth rates or scaling.
+
+### Text Functions
+
+- **CONCAT**: Concatenate text strings, ideal for combining first and last names or creating descriptive labels. Example: `CONCAT({{first_name}}, ' ', {{last_name}})`.
+- **UPPER & LOWER**: Standardize text by converting it to uppercase or lowercase, ensuring consistency.
+
+### Logical Functions
+
+- **IF**: Create conditional statements that change based on the data. Example: `IF({{age}} >= 18, 'Adult', 'Minor')`.
+- **AND & OR**: Use these functions to combine conditions, creating flexible logic tailored to your needs.
+
+### System Functions
+
+- **RECORD_ID**: Retrieve the ID of the current record, helpful in managing unique identifiers or creating references.
+
+## Practical Formula Use Cases in undb
+
+- **Budget Tracking**: Use SUM, SUBTRACT, and ROUND to calculate total spending or income.
+- **Inventory Management**: Automatically calculate stock levels with MULTIPLY and DIVIDE.
+- **Data Consistency**: Standardize text fields using TRIM or UPPER to maintain consistent entries across your database.
+- **Personalized Messages**: With text functions, generate custom messages by concatenating user data and conditional phrases.
+
+## Start Automating with Formulas in undb!
+
+Ready to give it a try? Log into your undb account and start creating Formula fields to take full advantage of your data. Our Formula field will change the way you manage information, giving you the ability to create custom solutions for your unique data needs without the need for complex code.
+
+Let us know how you're using Formulas in your workflows! We're excited to see what you create with this new feature and look forward to continuing to empower you with tools to make your data work smarter, not harder.
+
+---
+
+*Closing Remarks: Stay tuned for more feature updates as undb evolves to bring you the best no-code solutions.*

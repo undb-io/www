@@ -1,4 +1,4 @@
-<article class="prose lg:prose-xl" itemtype="https://schema.org/BlogPosting">
+<article class="prose" itemtype="https://schema.org/BlogPosting">
 	<slot />
 </article>
 
