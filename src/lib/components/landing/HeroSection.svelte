@@ -26,7 +26,7 @@
 				{' '}
 				<span
 					class={cn(
-						`animate-gradient inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+						`animate-gradient inline bg-gradient-to-r from-[#0011FF] via-[#0091FF] to-[#00F0FF] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
 					)}
 				>
 					Undb is now in tech preview.

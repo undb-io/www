@@ -36,15 +36,9 @@
 
       /* Custom properties */
       --navigation-height: 3.5rem;
-      --color-one: #ffbd7a;
-      --color-two: #fe8bbb;
-      --color-three: #9e7aff;
-
-      /*
-    --color-one: #37ecba;
-    --color-two: #72afd3;
-    --color-three: #ff2e63;
-     */
+      --color-one: #4A90E2;
+      --color-two: #2C5282;
+      --color-three: #63B3ED;
    }
 
    .dark {
@@ -78,9 +72,9 @@
 
          /* Custom properties */
          --navigation-height: 3.5rem;
-         --color-one: #ffbd7a;
-         --color-two: #fe8bbb;
-         --color-three: #9e7aff;
+         --color-one: #4A90E2;
+         --color-two: #2C5282;
+         --color-three: #63B3ED;
    }
 }
 
