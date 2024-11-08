@@ -1,11 +1,26 @@
 import { env } from '$env/dynamic/public';
+import { slugFromPath } from '$lib/slugFromPath';
 import type { ITemplate } from '../../lib/types/template';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async () => {
-	// 复用现有的模板获取逻辑
+	// 获取模板数据
 	const res = await fetch(`${env.PUBLIC_UNDB_URL}/api/templates`);
 	const { templates } = (await res.json()) as { templates: ITemplate[] };
+
+	// 获取博客数据
+	const modules = import.meta.glob(`/src/blogs/*.{md,svx,svelte.md}`);
+	const postPromises = Object.entries(modules).map(([path, resolver]) =>
+		resolver().then(
+			(post) =>
+				({
+					slug: slugFromPath(path),
+					...(post as unknown as App.MdsvexFile).metadata
+				}) as App.BlogPost
+		)
+	);
+	const blogs = await Promise.all(postPromises);
+	const publishedPosts = blogs.filter((post) => post.published);
 
 	// 生成sitemap XML
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -30,12 +45,22 @@ export const GET: RequestHandler = async () => {
       </url>`
 				)
 				.join('')}
+      ${publishedPosts
+				.map(
+					(post) => `
+      <url>
+        <loc>https://undb.io/blog/${post.slug}</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+      </url>`
+				)
+				.join('')}
     </urlset>`.trim();
 
 	return new Response(sitemap, {
 		headers: {
 			'Content-Type': 'application/xml',
-			'Cache-Control': 'max-age=0, s-maxage=3600' // 缓存1小时
+			'Cache-Control': 'max-age=0, s-maxage=3600'
 		}
 	});
 };
