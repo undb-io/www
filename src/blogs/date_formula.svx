@@ -1,0 +1,71 @@
+---
+title: 'New Date Functions Added to Formula System'
+description: 'UnDB adds new date manipulation functions to make data processing easier'
+date: '2024-11-08'
+categories:
+  - undb
+  - field
+  - formula
+published: true
+author: 'Undb'
+---
+
+# Enhanced Date Functions in UnDB Formula System
+
+We're excited to announce a significant enhancement to UnDB's formula system with the addition of comprehensive date manipulation functions. These new functions make it easier than ever to work with dates in your databases.
+
+## New Functions Overview
+
+### Date Component Functions
+Extract specific parts from a date:
+
+- `YEAR(date)` - Extract the year
+- `MONTH(date)` - Extract the month (1-12)
+- `DAY(date)` - Extract the day of month
+- `HOUR(date)` - Extract the hour (0-23)
+- `MINUTE(date)` - Extract the minute (0-59)
+- `SECOND(date)` - Extract the second (0-59)
+- `WEEKDAY(date)` - Get the day of week (1 = Sunday, 2 = Monday, etc.)
+
+### Date Calculation Functions
+Perform date arithmetic and comparisons:
+
+- `DATE_ADD(date, number, unit)` - Add time to a date
+- `DATE_SUBTRACT(date, number, unit)` - Subtract time from a date
+- `DATE_DIFF(date1, date2, unit)` - Calculate the difference between dates
+
+## Usage Examples
+
+### Working with Date Components
+```typescript
+// Extract date components
+YEAR('2024-03-20')    // Returns: 2024
+MONTH('2024-03-20')   // Returns: 3
+DAY('2024-03-20')     // Returns: 20
+WEEKDAY('2024-03-20') // Returns: 4 (Wednesday)
+
+// Time components
+HOUR('2024-03-20 15:30:45')   // Returns: 15
+MINUTE('2024-03-20 15:30:45') // Returns: 30
+SECOND('2024-03-20 15:30:45') // Returns: 45
+```
+
+### Date Calculations
+```typescript
+// Adding time intervals
+DATE_ADD('2024-03-20', 1, 'day')    // Returns: 2024-03-21
+DATE_ADD('2024-03-20', 1, 'month')  // Returns: 2024-04-20
+DATE_ADD('2024-03-20', 1, 'year')   // Returns: 2025-03-20
+DATE_ADD('2024-03-20', 1, 'hour')   // Returns: 2024-03-20 01:00:00
+
+// Subtracting time intervals
+DATE_SUBTRACT('2024-03-20', 1, 'day')   // Returns: 2024-03-19
+DATE_SUBTRACT('2024-03-20', 1, 'month') // Returns: 2024-02-20
+DATE_SUBTRACT('2024-03-20', 1, 'year')  // Returns: 2023-03-20
+
+// Calculate date differences
+DATE_DIFF('2024-03-20', '2024-04-20', 'day')   // Returns:
+```
+
+For more detailed information about date functions, please refer to the <a href="https://docs.undb.io/field-types/formula/#date-functions">undb Formula Documentation</a>.
+
