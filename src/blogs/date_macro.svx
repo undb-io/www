@@ -1,0 +1,66 @@
+---
+title: 'New Date Macros in undb: Smarter Date Handling'
+description: 'Introducing the new date macro functionality in undb for more flexible and convenient date field management'
+author: 'Undb'
+date: '2024-11-11'
+categories:
+  - undb
+  - field
+published: true
+---
+
+We're excited to announce the new Date Macro functionality in undb, making date field handling more intuitive and efficient than ever.
+
+## What are Date Macros?
+
+Date macros are predefined dynamic date values that automatically generate dates based on the current time. Instead of manually entering dates, you can use simple commands to set dynamic date values.
+
+<img src="/blogs/20241111/date-macros.png" alt="Date Macro" />
+
+## New Date Macro Features
+
+undb now supports the following date macros:
+
+- **@now** - Gets the current date and time
+- **@today** - Gets today's date (start of day)
+- **@tomorrow** - Gets tomorrow's date
+- **@yesterday** - Gets yesterday's date
+
+## Use Cases
+
+### 1. Project Management
+- Use `@today` to quickly record task creation dates
+- Set default due dates with `@tomorrow`
+
+### 2. Event Scheduling
+- Utilize `@now` for precise event timestamp recording
+- Track previous day's activities with `@yesterday`
+
+### 3. Automated Workflows
+- Set default values using date macros
+- Streamline batch record creation with dynamic dates
+
+## Benefits of Using Date Macros
+
+### Time Efficiency
+Date macros eliminate the need for manual date entry, reducing the time spent on data input and the potential for human error.
+
+### Consistency
+By using standardized date macros, you ensure consistent date formatting across your database, making data analysis and filtering more reliable.
+
+### Dynamic Updates
+Date macros automatically adjust based on the current time, ensuring your date fields always remain relevant and up-to-date.
+
+## Getting Started
+
+Using date macros in undb is straightforward. When configuring a date field, simply select the desired macro from the default value options. The system will automatically handle the rest, updating the date values according to your chosen macro.
+
+## Looking Forward
+
+This is just the beginning of our enhanced date handling features. We're continuously working on expanding the date macro functionality to include more options and greater flexibility in date management.
+
+Stay tuned for more updates as we continue to improve undb's date handling capabilities!
+
+## Documentation
+
+For more information on date macros, please refer to the [undb documentation](https://docs.undb.io/field-types/date/#5-date-macros).
