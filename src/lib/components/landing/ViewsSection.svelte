@@ -8,7 +8,10 @@
 		KanbanIcon,
 		GalleryThumbnailsIcon,
 		FormInputIcon,
-		CalendarIcon
+		CalendarIcon,
+
+		LayoutPanelLeftIcon
+
 	} from 'lucide-svelte';
 
 	const views = [
@@ -35,6 +38,12 @@
 			description: 'Display images in a gallery view.',
 			image: '/images/views/gallery-view.jpeg',
 			icon: GalleryThumbnailsIcon
+		},
+		{
+			name: 'Pivot View',
+			description: 'Pivot your data into a pivot table view.',
+			image: '/images/views/pivot.jpeg',
+			icon: LayoutPanelLeftIcon,
 		},
 		{
 			name: 'Form View',
