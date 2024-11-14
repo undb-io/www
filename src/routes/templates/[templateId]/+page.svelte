@@ -4,10 +4,14 @@
 	import type { PageData } from './$types';
 	import { onMount } from 'svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
 
-	let selectedImage: string = '';
-	let thumbnails: string[] = [];
+	let { data }: Props = $props();
+
+	let selectedImage: string = $state('');
+	let thumbnails: string[] = $state([]);
 
 	onMount(() => {
 		thumbnails = data.template.images || [];
@@ -76,7 +80,7 @@
 				<button
 					data-selected={selectedImage === thumbnail}
 					class="relative h-24 w-36 cursor-pointer overflow-hidden rounded-lg shadow-md transition-all hover:shadow-lg data-[selected=true]:border data-[selected=true]:border-primary"
-					on:click={() => selectImage(thumbnail)}
+					onclick={() => selectImage(thumbnail)}
 				>
 					<img
 						src={thumbnail}

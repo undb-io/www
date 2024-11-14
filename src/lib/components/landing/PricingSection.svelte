@@ -58,7 +58,7 @@
 			href: 'mailto:hi@undb.io'
 		}
 	];
-	let interval: Interval = 'month';
+	let interval: Interval = $state('month');
 	let isLoading = false;
 	let index = '';
 	/*
@@ -152,7 +152,7 @@
 					>
 						<span
 							class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black"
-						/>
+						></span>
 						{#if isLoading && index === price.id}
 							<LoaderIcon class="mr-2 size-4 animate-spin" />
 							Handling

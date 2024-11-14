@@ -53,7 +53,7 @@
 		}
 	];
 
-	let activeTab = views[0].name;
+	let activeTab = $state(views[0].name);
 	let interval: number;
 	let progress = tweened(0, { duration: 5000, easing: linear });
 
@@ -104,7 +104,7 @@
 						class="flex flex-col items-start justify-start gap-3 bg-transparent px-4 py-3 text-left text-base !shadow-none ring-0 transition-colors hover:bg-gray-100 hover:bg-transparent sm:text-lg"
 					>
 						<div class="flex items-center">
-							<svelte:component this={view.icon} class="mr-2 h-6 w-6" />
+							<view.icon class="mr-2 h-6 w-6" />
 							{view.name}
 						</div>
 
@@ -161,7 +161,7 @@
 					class="mx-1 h-3 w-3 rounded-full {activeTab === view.name
 						? 'bg-blue-600'
 						: 'bg-gray-300'}"
-					on:click={() => handleTabChange(view.name)}
+					onclick={() => handleTabChange(view.name)}
 				></button>
 			{/each}
 		</div>

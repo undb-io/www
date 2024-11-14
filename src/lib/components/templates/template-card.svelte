@@ -2,7 +2,11 @@
 	import type { ITemplate } from '$lib/types/template';
 	import { AspectRatio } from '$lib/components/ui/aspect-ratio';
 
-	export let template: ITemplate;
+	interface Props {
+		template: ITemplate;
+	}
+
+	let { template }: Props = $props();
 </script>
 
 <a

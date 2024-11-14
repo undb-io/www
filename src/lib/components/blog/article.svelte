@@ -1,5 +1,15 @@
+<script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
+</script>
+
 <article class="prose" itemtype="https://schema.org/BlogPosting">
-	<slot />
+	{@render children?.()}
 </article>
 
 <svelte:head>

@@ -1,14 +1,28 @@
 <script lang="ts">
 	import Button from '$lib/components/ui/button/button.svelte';
 	import { cn } from '$lib/utils';
-	let className: any = '';
-	export { className as class };
-	export let name;
-	export let background;
-	export let Icon; // lucide Icon
-	export let description;
-	export let href;
-	export let cta;
+	
+	interface Props {
+		class?: any;
+		name: any;
+		background: any;
+		Icon: any;
+		description: any;
+		href: any;
+		cta: any;
+	}
+
+	let {
+		class: className = '',
+		name,
+		background,
+		Icon,
+		description,
+		href,
+		cta
+	}: Props = $props();
+
+	const SvelteComponent = $derived(background);
 </script>
 
 <div
@@ -23,13 +37,12 @@
 	)}
 >
 	<div class="absolute inset-0">
-		<svelte:component this={background} />
+		<SvelteComponent />
 	</div>
 	<div
 		class="pointer-events-none absolute bottom-0 left-0 right-0 top-1/2 z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10"
 	>
-		<svelte:component
-			this={Icon}
+		<Icon
 			class="h-12 w-12 origin-left transform-gpu text-neutral-700 transition-all duration-300 ease-in-out group-hover:scale-75"
 		/>
 

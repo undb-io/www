@@ -7,7 +7,12 @@
 	import ArticleMeta from '$lib/components/blog/article-meta.svelte';
 	import ArticleDescription from '$lib/components/blog/article-description.svelte';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+		children?: import('svelte').Snippet;
+	}
+
+	let { data, children }: Props = $props();
 </script>
 
 <BlogHeader title="Blog | Undb" description="An awesome blog about undb" />
@@ -22,4 +27,4 @@
 	{/each}
 </div>
 
-<slot />
+{@render children?.()}

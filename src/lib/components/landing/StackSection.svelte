@@ -8,8 +8,12 @@
 	import Tailwindcss from '$lib/imgs/tailwindcss.svg';
 	import { ExternalLinkIcon } from 'lucide-svelte';
 
-	let className: string = '';
-	export { className as class };
+	interface Props {
+		class?: string;
+	}
+
+	let { class: className = '' }: Props = $props();
+	
 </script>
 
 <section

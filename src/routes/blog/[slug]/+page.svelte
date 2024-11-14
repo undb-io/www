@@ -4,10 +4,16 @@
 	import BlogHeader from '$lib/components/blog/blog-header.svelte';
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	type C = $$Generic<typeof SvelteComponentTyped<any, any, any>>;
-	$: component = data.component as unknown as C;
+	let component = $derived(data.component as unknown as C);
+
+	const SvelteComponent = $derived(component);
 </script>
 
 <svelte:head>
@@ -23,5 +29,5 @@
 <ArticleMeta author={data.frontmatter.author} date={data.frontmatter.date} />
 
 <div class="mt-10 space-y-6">
-	<svelte:component this={component} />
+	<SvelteComponent />
 </div>

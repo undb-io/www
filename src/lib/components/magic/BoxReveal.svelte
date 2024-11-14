@@ -2,9 +2,21 @@
 	import { inview } from 'svelte-inview';
 	import { Motion, useAnimation } from 'svelte-motion';
 
-	export let width = 'fit-content';
-	export let boxColor = '#5046e6';
-	export let duration = 0.5;
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [width]
+	 * @property {string} [boxColor]
+	 * @property {number} [duration]
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let {
+		width = 'fit-content',
+		boxColor = '#5046e6',
+		duration = 0.5,
+		children
+	} = $props();
 
 	//   Animation Controls
 	let mainControls = useAnimation();
@@ -26,11 +38,11 @@
 	class="relative overflow-hidden"
 	style="width:{width}"
 	use:inview
-	on:inview_enter={viewEnter}
-	on:inview_leave={viewLeave}
+	oninview_enter={viewEnter}
+	oninview_leave={viewLeave}
 >
 	<Motion
-		let:motion
+		
 		variants={{
 			hidden: { opacity: 0, y: 75 },
 			visible: { opacity: 1, y: 0 }
@@ -39,10 +51,12 @@
 		animate={mainControls}
 		transition={{ duration: duration ? duration : 0.5, delay: 0.25 }}
 	>
-		<div use:motion>
-			<slot>Default</slot>
-		</div>
-	</Motion>
+		{#snippet children({ motion })}
+				<div use:motion>
+				{#if children}{@render children()}{:else}Default{/if}
+			</div>
+					{/snippet}
+		</Motion>
 	<Motion
 		variants={{
 			hidden: { left: 0 },
@@ -51,12 +65,14 @@
 		initial="hidden"
 		animate={sideControls}
 		transition={{ duration: duration ? duration : 0.5, ease: 'easeIn' }}
-		let:motion
+		
 	>
-		<div
-			style="background:{boxColor}"
-			class="absolute bottom-[4px] left-0 right-0 top-[4px] z-40"
-			use:motion
-		></div>
-	</Motion>
+		{#snippet children({ motion })}
+				<div
+				style="background:{boxColor}"
+				class="absolute bottom-[4px] left-0 right-0 top-[4px] z-40"
+				use:motion
+			></div>
+					{/snippet}
+		</Motion>
 </div>

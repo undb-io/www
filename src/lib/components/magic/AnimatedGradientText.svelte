@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
 
-	let className: any = '';
-	export { className as class };
+	interface Props {
+		class?: any;
+		children?: import('svelte').Snippet;
+	}
+
+	let { class: className = '', children }: Props = $props();
+	
 	let colorClass: string = '';
 </script>
 
@@ -17,7 +22,7 @@
 			'animate-gradient absolute inset-0 block h-full w-full bg-gradient-to-r from-[#2563eb]/50 via-[#3b82f6]/50 to-[#60a5fa]/50 bg-[length:var(--bg-size)_100%] p-[1px] [border-radius:inherit] ![mask-composite:subtract] [mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]',
 			colorClass
 		)}
-	/>
+	></div>
 
-	<slot>Gradient</slot>
+	{#if children}{@render children()}{:else}Gradient{/if}
 </button>

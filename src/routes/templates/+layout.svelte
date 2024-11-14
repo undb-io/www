@@ -1,5 +1,15 @@
+<script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
+</script>
+
 <main class="container mx-auto max-w-screen-2xl space-y-4 px-4 py-10 sm:px-6 lg:px-8">
-	<slot />
+	{@render children?.()}
 </main>
 
 <svelte:head>

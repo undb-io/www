@@ -2,7 +2,11 @@
 	import type { ITemplate } from '$lib/types/template';
 	import TemplateCard from './template-card.svelte';
 
-	export let templates: ITemplate[];
+	interface Props {
+		templates: ITemplate[];
+	}
+
+	let { templates }: Props = $props();
 </script>
 
 <div class="grid grid-cols-12 gap-x-4 gap-y-6">

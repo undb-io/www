@@ -11,7 +11,7 @@
 	import DotPattern from '../magic/DotPattern.svelte';
 	import AnimatedGradientText from '../magic/AnimatedGradientText.svelte';
 	import { cn } from '$lib/utils';
-	let inView = false;
+	let inView = $state(false);
 	const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
 		inView = detail.inView;
 	};
@@ -92,7 +92,7 @@
 			unobserveOnEnter: true,
 			rootMargin: '-100px'
 		}}
-		on:inview_change={handleChange}
+		oninview_change={handleChange}
 		class="sm:md-32 relative mt-8 animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]"
 	>
 		<div

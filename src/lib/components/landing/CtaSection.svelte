@@ -55,7 +55,8 @@
 				<Marquee reverse class="-delay-[200ms] [--duration:10s]" repeat={5}>
 					{#each randomTiles1 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent = icon}
+							<SvelteComponent class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -63,7 +64,8 @@
 				<Marquee reverse class="[--duration:25s]" repeat={5}>
 					{#each randomTiles2 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent_1 = icon}
+							<SvelteComponent_1 class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -71,7 +73,8 @@
 				<Marquee reverse class="-delay-[200ms] [--duration:20s]" repeat={5}>
 					{#each randomTiles1 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent_2 = icon}
+							<SvelteComponent_2 class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -79,7 +82,8 @@
 				<Marquee reverse class="[--duration:30s]" repeat={5}>
 					{#each randomTiles2 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent_3 = icon}
+							<SvelteComponent_3 class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -87,7 +91,8 @@
 				<Marquee reverse class="-delay-[200ms] [--duration:20s]" repeat={5}>
 					{#each randomTiles3 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent_4 = icon}
+							<SvelteComponent_4 class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -95,7 +100,8 @@
 				<Marquee reverse class="[--duration:30s]" repeat={5}>
 					{#each randomTiles4 as { icon, bg }, id}
 						<CtaCard>
-							<svelte:component this={icon} class="size-full" />
+							{@const SvelteComponent_5 = icon}
+							<SvelteComponent_5 class="size-full" />
 							<div class={bg}></div>
 						</CtaCard>
 					{/each}
@@ -118,11 +124,11 @@
 					</div>
 					<div
 						class="bg-backtround absolute inset-0 -z-10 rounded-full opacity-40 blur-xl dark:bg-background"
-					/>
+					></div>
 				</div>
 				<div
 					class="to-backtround absolute inset-x-0 bottom-0 h-full bg-gradient-to-b from-transparent to-70% dark:to-background"
-				/>
+				></div>
 			</div>
 		</div>
 	</div>

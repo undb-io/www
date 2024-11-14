@@ -1,17 +1,29 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
 
-	export let size = 200;
-	export let duration = 15;
-	export let anchor = 90;
-	export let borderWidth = 1.5;
-	export let colorFrom = '#0011FF';
-	export let colorTo = '#00F0FF';
-	export let delay = 0;
-	let delaySec = delay + 's';
+	interface Props {
+		size?: number;
+		duration?: number;
+		anchor?: number;
+		borderWidth?: number;
+		colorFrom?: string;
+		colorTo?: string;
+		delay?: number;
+		class?: any;
+	}
 
-	let className: any = '';
-	export { className as class };
+	let {
+		size = 200,
+		duration = 15,
+		anchor = 90,
+		borderWidth = 1.5,
+		colorFrom = '#0011FF',
+		colorTo = '#00F0FF',
+		delay = 0,
+		class: className = ''
+	}: Props = $props();
+
+	let delaySec = delay + 's';
 </script>
 
 <div

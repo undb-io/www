@@ -9,7 +9,12 @@
 	import Header from '$lib/layout/Header.svelte';
 	import { dev } from '$app/environment';
 
-	export let data: LayoutData;
+	interface Props {
+		data: LayoutData;
+		children?: import('svelte').Snippet;
+	}
+
+	let { data, children }: Props = $props();
 
 	onMount(() => {
 		if (env.PUBLIC_MIXPANEL_TOKEN) {
@@ -32,7 +37,7 @@
 	<Header loggedIn={data.loggedIn} />
 
 	<div class="flex-1">
-		<slot></slot>
+		{@render children?.()}
 	</div>
 
 	<Footer />

@@ -1,8 +1,12 @@
 <script lang="ts">
 	import Button from '../ui/button/button.svelte';
 
-	export let description: string;
-	export let slug = '';
+	interface Props {
+		description: string;
+		slug?: string;
+	}
+
+	let { description, slug = '' }: Props = $props();
 
 	const href = slug && `/blog/${slug}`;
 </script>

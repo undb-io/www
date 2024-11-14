@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { cn } from '$lib/utils';
-	export let reverse: boolean = false;
+	interface Props {
+		reverse?: boolean;
+	}
+
+	let { reverse = false }: Props = $props();
 </script>
 
 <div
