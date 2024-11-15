@@ -1,0 +1,52 @@
+---
+title: 'Date Format'
+description: 'Undb supports date format'
+date: '2024-11-15'
+categories:
+  - undb
+  - date
+published: true
+author: 'Undb'
+---
+
+# Introducing Enhanced Date and Date Range Fields in undb
+
+Managing dates and times in undb just got more flexible! With our latest update, the date and date range fields now support advanced customization options, allowing you to tailor them to your specific needs.
+
+<img src="/blogs/20241115/date-format.gif" alt="date format" />
+
+## What's New?
+
+### 1. Customizable Date Formats
+You can now choose from multiple date formats to match your regional or business requirements.
+
+Examples include:
+- YYYY-MM-DD (Year-Month-Day)
+- MM/DD/YYYY (Month/Day/Year)
+
+### 2. Option to Include Time
+Need more precision? You can now decide whether to include time alongside dates.
+- Date Only: Perfect for scenarios where only the date matters, like due dates or birthdays.
+- Date and Time: Great for scheduling meetings, tracking events, or logging timestamps.
+
+### 3. Time Selection Made Easy
+If you choose to include time, you'll have full control to select:
+- Hours: Choose between 24-hour or 12-hour formats.
+- Minutes: Pinpoint the exact time with ease.
+
+## How to Get Started
+
+Using these new features is simple:
+1. When creating or editing a date or date range field, open the Field Settings.
+2. Select your preferred date format.
+3. Enable the Include Time option if needed.
+4. Save your changes, and you're all set!
+
+## Why It Matters
+
+This update empowers you to:
+- Manage projects with precision by setting specific start and due times.
+- Schedule appointments or events with exact timestamps.
+- Enhance data accuracy across use cases like booking systems, logs, and more.
+
+Try the new and improved date and date range fields in undb today. We're committed to making your data management experience seamless and adaptable. Let us know how you're using these new features—we'd love to hear your feedback!
