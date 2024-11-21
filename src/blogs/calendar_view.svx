@@ -1,0 +1,100 @@
+---
+title: 'Introducing the Enhanced Calendar View in Undb'
+description: 'Introducing the new calendar view in undb for more intuitive time management. The new calendar view supports three time scales to suit your planning needs, and it supports drag-and-drop functionality to make managing your records a breeze.'
+author: 'Undb'
+date: '2024-11-21'
+categories:
+  - undb
+  - field
+  - view
+  - calendar
+published: true
+---
+
+# Introducing the Enhanced Calendar View in Undb
+
+<img src="/blogs/20241121/calendar/calendar.jpeg" alt="Calendar View" />
+
+Managing time-sensitive data just got a whole lot easier! We're thrilled to introduce the enhanced Calendar View in undb, designed to streamline how you visualize, organize, and interact with your records. Whether you're planning events, managing tasks, or tracking deadlines, this feature offers everything you need for intuitive scheduling.
+
+Let's dive into what makes this new calendar view a game-changer!
+
+## Three Flexible Time Scales
+
+<img src="/blogs/20241121/calendar/calendar-timescale.gif" alt="Calendar View Supports Three Time Scales" />
+
+The calendar view now supports three time scales to suit your planning needs:
+
+1. **Month View**
+   Get a bird's-eye view of your entire month. This is perfect for long-term planning and identifying patterns or busy periods.
+
+2. **Week View**
+   Zoom in to focus on a single week. This is great for prioritizing tasks and managing deadlines on a more detailed level.
+
+3. **Day View**
+   Need to micromanage your schedule? The day view offers an hour-by-hour breakdown to ensure you stay on track.
+
+Switching between these views is seamless, giving you full control over how you approach your time management.
+
+## Drag-and-Drop Magic
+
+<img src="/blogs/20241121/calendar/calendar-dnd.gif" alt="Calendar View Supports Drag-and-Drop" />
+
+Say goodbye to clunky interfaces and repetitive actions! The new drag-and-drop functionality in the calendar view makes managing your records a breeze:
+
+- **Move Records Instantly**: Drag a record from its current position to a new time slot, and watch the updates happen in real time.
+- **Create New Records**: Simply drag into an empty date or time slot to quickly add a new record.
+- **Assign Dates with Ease**: Unassigned records can now be dragged directly from the right-side panel into the calendar, instantly assigning them a date and time.
+
+This feature is designed to save you time and make organizing your schedule more intuitive than ever.
+
+## Quick Record Creation and Updates
+
+<img src="/blogs/20241121/calendar/calendar-dnd-panel.gif" alt="Calendar View Supports Quick Record Creation" />
+
+Creating and managing records has never been this simple:
+
+- Click directly on a date or time slot in the calendar to create a new record with pre-filled date and time values.
+- Drag unassigned records from the right-side panel into the calendar to instantly assign a time.
+
+Need to reschedule? Just drag the record to its new time slot, and the date/time fields will automatically update.
+
+## Powerful Filtering Options
+
+The right-side panel isn't just a list of records—it's a powerful tool for managing your calendar view. With dynamic filtering options, you can choose to display:
+
+- **In Selected Date**: View only the records scheduled within the visible date range.
+- **Without Date**: Focus on records that haven't been assigned a date yet.
+- **All Records**: See every record in your space, regardless of date.
+
+This ensures you always have the information you need, exactly when you need it.
+
+## Why You'll Love the Calendar View
+
+The calendar view isn't just a tool—it's a productivity booster. Here's why it stands out:
+
+- **Visual Planning**: Easily see how your tasks and events are distributed across time.
+- **Effortless Organization**: Drag and drop records to update schedules in seconds.
+- **Seamless Workflows**: Quickly filter and manage records from the right-side panel.
+- **Adaptable to Your Needs**: Switch between Month, Week, and Day views depending on your focus.
+
+## Use Cases
+
+The enhanced calendar view is ideal for:
+
+- **Event Planning**: Schedule meetings, interviews, or deadlines with ease.
+- **Task Management**: Organize daily, weekly, or monthly tasks for teams or individuals.
+- **Resource Allocation**: Assign unplanned records to specific dates and times in seconds.
+
+## Getting Started
+
+Ready to take your time management to the next level? Here's how to start:
+
+1. Open a table with date-based fields.
+2. Switch to the calendar view using the view selector.
+3. Explore the Month, Week, and Day views to find the perspective that works best for you.
+4. Start creating, updating, and organizing your records with drag-and-drop functionality.
+
+The new calendar view in undb is more than just a way to visualize your data—it's a powerful scheduling and planning tool that adapts to your workflow. Whether you're managing a personal to-do list, planning events, or coordinating with a team, this feature has you covered.
+
+Try the enhanced calendar view today and experience effortless time management with undb!
