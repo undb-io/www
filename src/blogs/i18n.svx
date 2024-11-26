@@ -1,0 +1,55 @@
+---
+title: 'Introducing Internationalization in Undb'
+description: 'Introducing internationalization in undb, supporting multiple languages and locales.'
+author: 'Undb'
+date: '2024-11-26'
+categories:
+  - undb
+  - i18n
+published: true
+---
+
+# Introducing Multi-language Support in undb
+
+At undb, we understand the importance of creating a globally accessible platform that caters to diverse audiences. We're excited to announce that undb now supports multiple languages, including Chinese, English, Korean, Japanese, and Spanish! 🎉
+
+With this update, we aim to make undb even more user-friendly and adaptable for international users, enabling teams across the globe to collaborate and manage their data seamlessly.
+
+<img src="/blogs/20241126/en.png" alt="Internationalization in undb" />
+<img src="/blogs/20241126/zh.png" alt="Internationalization in undb" />
+<img src="/blogs/20241126/ko.png" alt="Internationalization in undb" />
+<img src="/blogs/20241126/ja.png" alt="Internationalization in undb" />
+<img src="/blogs/20241126/es.png" alt="Internationalization in undb" />
+
+## Why Multi-language Support Matters
+
+In today's interconnected world, having software that speaks your language is no longer a luxury but a necessity. By introducing multi-language support, undb offers:
+
+* Better User Experience: Work in the language you're most comfortable with.
+* Global Collaboration: Teams from different regions can collaborate effortlessly on the same platform.
+* Accessibility: Lower barriers for users who aren't fluent in English, empowering them to harness the full potential of undb.
+
+## Supported Languages
+
+* 中文 (Chinese): Simplified Chinese interface for our users in China and other Mandarin-speaking regions.
+* English: The default language for global users.
+* 한국어 (Korean): A tailored experience for our Korean-speaking users.
+* 日本語 (Japanese): A localized interface for our Japanese-speaking community.
+* Español (Spanish): Support for one of the world's most widely spoken languages.
+
+## How to Switch Languages
+
+Switching between languages in undb is easy:
+
+1. Navigate to the Settings page.
+2. Select the Language option.
+3. Choose your preferred language from the dropdown menu.
+4. Save your changes, and undb will reload in your chosen language!
+
+## What's Next?
+
+This is just the beginning! We're committed to expanding our language offerings and refining translations to ensure accuracy and cultural relevance. If you have feedback on the translations or wish to request support for additional languages, feel free to reach out to us.
+
+Let's build a world where data collaboration transcends language barriers. 🌍 Start using undb in your language today and experience the power of a truly global no-code and backend-as-a-service platform.
+
+**Try undb now and share your feedback!**
