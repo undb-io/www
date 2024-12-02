@@ -1,0 +1,70 @@
+---
+title: 'Update Field Type in Undb'
+description: 'Update field type in undb, supporting more field types.'
+author: 'Undb'
+date: '2024-12-02'
+categories:
+  - undb
+  - field
+published: true
+---
+
+# Field Type Conversion: Enhancing Flexibility in Data Management with undb
+
+In the latest update to undb, we're excited to introduce field type conversion—a feature designed to offer greater flexibility in managing and transforming your data. This capability allows users to convert fields between supported types while preserving data integrity whenever possible. Whether you're refining your schema, adapting to new data requirements, or exploring better ways to organize information, this guide will walk you through the essentials of field type conversion.
+
+## Why Field Type Conversion Matters
+
+As data evolves, so do the ways we structure and interpret it. Field type conversion makes it easier to adapt to changing requirements without having to recreate tables or manually adjust data. Whether you need to transform a Text field into a Number field, convert dates for better reporting, or restructure a Select field to accommodate dynamic options, undb ensures a smooth transition.
+
+## Key Highlights of the Conversion Process
+
+1. **Data Preservation**: Wherever possible, undb strives to retain your data during conversions. For example, converting a Text field to Email will preserve entries that match the email format, while invalid entries will be cleared.
+2. **Conditional Conversions**: Some conversions depend on the validity of the original data. For example, text can be parsed into dates or numbers, but invalid values will be set to NULL.
+3. **Comprehensive Coverage**: The conversion matrix supports a wide range of field types, from Text and Number to Select, Date, and even Currency.
+4. **Validation Built-In**: undb automatically validates data against the target field type, ensuring that converted fields meet format and range requirements.
+
+## Conversion Matrix at a Glance
+
+Here's a quick summary of how field types convert into each other:
+
+| From/To | Text | Number | Date | DateRange | Checkbox | Select | User | Email | URL | Currency |
+|---------|------|---------|------|-----------|-----------|---------|------|--------|-----|----------|
+| Text | ✅ Keep | ⚠️ Parse | ⚠️ Parse valid dates | ⚠️ Parse | ⚠️ true/1 = true | ⚠️ Match options | ⚠️ Match users | ⚠️ Keep valid | ⚠️ Keep valid | ⚠️ Parse |
+| Number | ✅ Convert | ✅ Keep | ✅ Unix timestamp | ❌ Clear | ✅ 0 = false | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear | ✅ /100 |
+| Date | ✅ ISO string | ✅ Timestamp | ✅ Keep | ✅ Same start/end | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear |
+| Checkbox | ✅ true/false | ✅ 1/0 | ❌ Clear | ❌ Clear | ✅ Keep | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear | ❌ Clear |
+
+**Legend**:
+- ✅ Fully supported with data preservation.
+- ⚠️ Conditional (data may clear if invalid).
+- ❌ Data will clear during conversion.
+
+For a detailed breakdown of specific scenarios, check out the full Field Type Conversion Guide.
+
+## Data Validation Rules
+
+- Text to Email: Must match the standard email format (e.g., user@example.com).
+- Text to URL: Must begin with http or https.
+- Text to Checkbox: Values like true, yes, or 1 are treated as true; others default to false.
+- Number to Date: Interpreted as a Unix timestamp.
+- Currency: Always stored as cents for precision, requiring /100 conversion from integers.
+
+## Best Practices for Field Type Conversion
+
+1. **Backup Data**: Always create a backup of your data before attempting large-scale conversions.
+2. **Test with Small Datasets**: Experiment with a subset of your data to ensure the conversion behaves as expected.
+3. **Be Aware of Irreversibility**: Some transformations, like Checkbox to other types, may clear data permanently.
+4. **Use Validation Rules**: Familiarize yourself with undb's built-in validation to avoid unexpected results.
+
+## Refer to the full documentation for more details
+
+[Field Type Conversion Guide](https://docs.undb.io/field/change-type/)
+
+## Conclusion
+
+Field type conversion unlocks new possibilities for dynamic and adaptive data management in undb. By offering a structured approach to changing field types, this feature helps streamline workflows and enhances your ability to manage complex datasets.
+
+Ready to transform your data? Explore this feature in the latest version of undb and take your data management to the next level. For more details, check out the full documentation.
+
+Let us know how this update has enhanced your experience! Share your feedback or join the conversation in the undb community.
