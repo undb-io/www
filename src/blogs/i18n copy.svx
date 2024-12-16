@@ -1,0 +1,112 @@
+---
+title: 'Introducing the Undb Playground'
+description: 'Introducing the Undb Playground: A Full In-Browser Experience of undb’s Capabilities'
+date: '2024-12-16'
+categories:
+  - undb
+  - playground
+published: true
+author: 'Undb'
+---
+
+## Introduction
+
+Imagine being able to experience the full power of a no-code backend directly in your browser — without needing to register, install any software, or create an account. This is exactly what the undb Playground offers. With the Playground, users can fully explore undb's core capabilities, including creating, reading, updating, and deleting (CRUD) records in tables, managing views, and even experiencing features like filters, sorts, Kanban views, and more — all directly in the browser.
+
+Unlike typical demos or limited previews, the undb Playground provides a complete experience. However, since the changes are stored in browser memory, once you refresh or close the tab, all data will be lost. This is intentional, providing users with a risk-free and frictionless exploration experience.
+
+In this blog post, we'll explore how this Playground was built, the technologies behind it, and the architectural decisions that made it possible.
+
+<img src="/blogs/20241216/playground.gif" alt="shows how to use playground" />
+
+## Key Features of the undb Playground
+
+The undb Playground is not just a "demo" — it's a fully interactive experience that mirrors the functionality of the main undb platform. Here are some of the key features you can explore in the Playground:
+
+- Table Creation: Users can create new tables and define fields with various types like strings, numbers, percentages, and more.
+- Data Manipulation: Full CRUD (Create, Read, Update, Delete) support — add records, update them, delete them, and even batch update records.
+- View Customization: Customizable views, including Kanban views, support for filters, sorting, and color coding.
+- No Registration Required: No need to log in or create an account.
+- Zero Persistence: Data is stored only in memory. When you refresh, it resets — providing a clean, risk-free way to experiment.
+
+These features allow users to get a real feel for undb's potential as a no-code database solution and backend-as-a-service (BaaS) alternative.
+
+## The Technology Behind the undb Playground
+
+Building a browser-based Playground with full CRUD functionality was no small feat. Here's a look at the technology stack and the architecture behind it.
+
+### 1. SQL.js for SQLite in the Browser
+
+At the heart of the Playground is SQL.js, a port of SQLite to WebAssembly (WASM). This allows us to run a complete SQLite database directly in the browser without relying on any backend server. SQL.js is fast, lightweight, and perfectly suited for client-side storage use cases.
+
+#### Why SQL.js?
+
+- **Browser-first**: It works directly in the browser as a WebAssembly (WASM) module, requiring no server.
+- Zero dependencies: No need for browser extensions, cookies, or server-side support.
+- Full SQLite support: Since it is a port of SQLite, all SQL features — constraints, foreign keys, transactions — work out of the box.
+
+#### Challenge: Handling Foreign Key Constraints
+
+Since SQLite's foreign key constraints are enforced by the database, one challenge we faced was handling constraints when records from a referenced table had not yet been created. This issue is common in transactional workflows. Using SQL.js, we replicated undb's approach to transaction handling, ensuring proper sequencing of table creation and insertion to avoid constraint failures.
+
+### 2. Dependency Injection with undb's Core
+
+One of the most "high-end" architectural decisions in this project was to stick with undb's core principles of dependency injection (DI). Dependency Injection allows components to remain loosely coupled and testable, which is crucial for modularity, reusability, and scalability. Instead of hardcoding the logic for managing the database, tables, and views, we inject dependencies for core services like table controllers, field managers, and CRUD operations.
+
+#### Why Dependency Injection (DI)?
+
+- Modular Design: Components like table managers, view managers, and action handlers are separate and can be replaced without touching core logic.
+- Testability: Each component can be tested in isolation without requiring a running SQLite instance.
+- Scalability: New features (like support for more field types) can be added by extending interfaces, not by rewriting core logic.
+
+With DI, every part of the Playground can be thought of as a "service" with clear, defined responsibilities. This approach echoes enterprise-level best practices seen in frameworks like NestJS, Spring, and Angular.
+
+### 3. Event-Driven Architecture
+
+The Playground also follows an event-driven architecture. Instead of immediately executing table and view changes, the Playground triggers "commands" — inspired by Command Query Responsibility Segregation (CQRS) principles. Commands are collected, executed, and if successful, changes are made to the SQLite database.
+
+This allows for operations like "undo/redo" to be implemented in the future, since every operation is captured as a command.
+
+This pattern allows for cleaner separation of responsibilities, clear operational history, and the ability to easily introduce features like "rollback" and "replay" of commands.
+
+### 4. Client-Side Storage Using Local Memory (Ephemeral)
+
+Unlike the undb cloud service, the Playground is fully ephemeral. When users refresh the page, all changes are wiped clean. This is achieved using the memory store of SQL.js. By design, SQL.js does not persist any data — it runs in-memory, making it a perfect fit for temporary, demo-like environments.
+
+However, for users who wish to persist their changes, IndexedDB could be introduced as a future enhancement. IndexedDB would allow for storage of the SQLite database file directly in the browser, enabling users to "resume" sessions when they revisit the Playground.
+
+### 5. Fully Client-Side (No Backend)
+
+The entire Playground runs without a backend. No cloud services, no REST APIs, no authentication. This is made possible by SQL.js, combined with a robust local DI system. All table and record changes are stored in browser memory, and the SQL queries are executed entirely in the browser's context.
+
+#### Why no backend?
+
+- Security: No sensitive user data is sent to a server.
+- Privacy-first: Since everything happens in the browser, users have complete control.
+- Offline-first: The system could work offline, and if IndexedDB is used, it could even support "offline persistence."
+
+## High-Level Architecture Overview
+
+```
+Browser
+  └── SQL.js (WASM) - In-memory SQLite database
+  └── Dependency Injection (TableService, FieldManager, RecordManager, ViewManager)
+  └── Event Bus (for Command Queue & Undo/Redo)
+  └── Undb UI (React/Vanilla JS)
+```
+
+This architecture is a beautiful mix of WebAssembly (SQL.js), TypeScript (for DI, CQRS, and event-driven logic), and browser storage.
+
+## What Makes This Architecture "High-End"?
+- Event-driven design: Inspired by CQRS, enabling undo/redo and clean operation history.
+- DI and Inversion of Control (IoC): All core functionality is injected via DI, ensuring loose coupling.
+- Purely client-side: No backend required, yet we have SQLite running in-memory with 100% SQL support.
+- Replayable commands: By capturing every action as a "command", the system can support undo/redo, operation tracking, and debugging.
+
+## Final Thoughts
+
+The undb Playground is a testament to what can be achieved in modern browser development. By combining SQL.js, WebAssembly, dependency injection, and event-driven design, we've built a fully functional, privacy-first, no-backend CRUD system — all inside a single browser tab.
+
+With this system, users can experience the true power of undb's no-code platform. It's more than just a demo; it's an interactive experience. If you haven't tried it yet, head over to the Playground and see for yourself!
+
+🚀 Experience the undb Playground today!
