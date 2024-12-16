@@ -62,29 +62,24 @@
 		<br class="hidden md:block" />
 		Nocode platform & BaaS you can host yourself.
 	</p>
-	<div class="flex flex-col justify-center gap-4 sm:flex-row">
+	<div class="animate-fade-in justify-center gap-4 space-y-2 ease-in-out [--animation-delay:600ms]">
 		<Button
-			href="https://app.undb.io"
+			href="https://app.undb.io/playground"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
+			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out  dark:text-black"
 		>
 			<CloudyIcon class="mr-2 h-4 w-4" />
-			<span>Try undb cloud for free</span>
+			<span>Try undb now</span>
 			<ArrowRightIcon
 				class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
 			/>
 		</Button>
-		<Button
-			variant="outline"
-			href="https://docs.undb.io"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="-translate-y-4 animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]"
+		<div
+			class="-translate-y-4 animate-fade-in text-sm text-gray-600 opacity-0 ease-in-out [--animation-delay:800ms]"
 		>
-			<BookIcon class="mr-2 h-4 w-4" />
-			<span>Documentation</span>
-		</Button>
+			No signup required
+		</div>
 	</div>
 
 	<div
