@@ -40,8 +40,8 @@
 				'Priority support',
 				'All upcoming features'
 			],
-			monthlyPrice: 1900,
-			yearlyPrice: 19000,
+			monthlyPrice: 900,
+			yearlyPrice: 9900,
 			isMostPopular: true,
 			button: 'Subscribe',
 			href: 'https://checkout.undb.io'
