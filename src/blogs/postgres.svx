@@ -1,0 +1,40 @@
+---
+title: "Undb Now Supports PostgreSQL as the Backend Database"
+description: "Undb Now Supports PostgreSQL as the Backend Database"
+date: '2025-01-13'
+categories:
+  - undb
+  - bun
+  - sqlite
+  - postgres
+  - database
+published: true
+author: 'Undb'
+---
+
+We're excited to announce that undb now supports PostgreSQL as a backend database. This new feature offers users greater flexibility and choice, especially for scenarios requiring high performance, strong consistency, and advanced query capabilities.
+
+## Why PostgreSQL?
+
+PostgreSQL is renowned for its robustness, extensibility, and adherence to SQL standards. By introducing PostgreSQL support, undb users can now:
+
+- Handle Larger Datasets: Leverage PostgreSQL's scalability to manage larger datasets efficiently.
+- Utilize Advanced Query Features: Perform complex queries using PostgreSQL's powerful SQL capabilities.
+- Ensure Data Integrity: Take advantage of features like ACID compliance and advanced transaction handling.
+- Integrate Seamlessly: Connect with a vast ecosystem of tools and frameworks that support PostgreSQL.
+
+## What Does This Mean for undb Users?
+
+With this update, undb retains its developer-friendly, no-code-first philosophy while giving users the power to:
+
+- Choose between SQLite for lightweight, local-first use cases and PostgreSQL for enterprise-grade applications.
+- Migrate existing databases to PostgreSQL for better performance and scalability.
+- Build more complex backend solutions while maintaining undb's intuitive interface and API-driven workflow.
+
+## Getting Started
+
+Switching to PostgreSQL in undb is simple. Users can configure the database connection in the environment settings by providing the necessary PostgreSQL credentials. Once configured, undb will seamlessly handle all data storage and queries via PostgreSQL.
+
+We're committed to making undb a versatile tool for developers and no-code enthusiasts alike. By integrating PostgreSQL, we've taken another step toward empowering users to build powerful applications with the database solution that best fits their needs.
+
+Try it today and experience the power of undb with PostgreSQL! 🌟
