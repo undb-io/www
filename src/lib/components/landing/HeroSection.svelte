@@ -29,7 +29,7 @@
 						`animate-gradient inline bg-gradient-to-r from-[#0011FF] via-[#0091FF] to-[#00F0FF] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
 					)}
 				>
-					Undb is now in tech preview.
+					Undb now join [Teable](teable.ai)
 				</span>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
