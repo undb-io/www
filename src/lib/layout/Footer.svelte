@@ -8,10 +8,10 @@
 		{
 			label: 'Product',
 			items: [
-				{
-					href: 'https://app.undb.io',
-					name: 'Undb'
-				}
+				// {
+				// 	href: 'https://app.undb.io',
+				// 	name: 'Undb'
+				// }
 				// {
 				// 	href: '/pricing',
 				// 	name: 'Pricing'

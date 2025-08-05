@@ -23,21 +23,7 @@
 	<SphereMask />
 {/await}
 
-{#await import('$lib/components/landing/PricingSection.svelte') then { default: PricingSection }}
-	<PricingSection />
-	<SphereMask />
-{/await}
-
-{#await import('$lib/components/landing/RoadmapSection.svelte') then { default: RoadmapSection }}
-	<RoadmapSection />
-	<SphereMask />
-{/await}
-
 {#await import('$lib/components/landing/StackSection.svelte') then { default: StackSection }}
 	<StackSection />
 	<SphereMask />
-{/await}
-
-{#await import('$lib/components/landing/SubmitBugSection.svelte') then { default: SubmitBugSection }}
-	<SubmitBugSection />
 {/await}

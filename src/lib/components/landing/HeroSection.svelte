@@ -19,7 +19,6 @@
 
 <section id="hero" class="relative mx-auto mt-20 max-w-7xl px-6 text-center sm:mt-32 md:px-8">
 	<DotPattern class="[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]" />
-	<a href="https://app.undb.io" target="_blank" rel="noopener noreferrer">
 		<div class="z-10 flex items-center justify-center">
 			<AnimatedGradientText>
 				🎉 <hr class="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />
@@ -46,7 +45,6 @@
 				>
 			</AnimatedGradientText>
 		</div>
-	</a>
 	<h1
 		class="-translate-y-4 animate-fade-in text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
 	>
@@ -63,18 +61,6 @@
 		Nocode platform & BaaS you can host yourself.
 	</p>
 	<div class="animate-fade-in justify-center gap-4 space-y-2 ease-in-out [--animation-delay:600ms]">
-		<Button
-			href="https://app.undb.io/playground"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out  dark:text-black"
-		>
-			<CloudyIcon class="mr-2 h-4 w-4" />
-			<span>Try undb now</span>
-			<ArrowRightIcon
-				class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-			/>
-		</Button>
 		<div
 			class="-translate-y-4 animate-fade-in text-sm text-gray-600 opacity-0 ease-in-out [--animation-delay:800ms]"
 		>

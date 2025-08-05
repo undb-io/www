@@ -30,11 +30,6 @@
 			href: 'https://checkout.undb.io'
 		},
 		{
-			id: 4,
-			label: 'Get Started',
-			href: 'https://app.undb.io'
-		},
-		{
 			id: 5,
 			label: 'Blog',
 			href: '/blog'
@@ -94,30 +89,7 @@
 			<Button variant="link" class="inline-flex items-center text-sm" href="/templates">
 				Template
 			</Button>
-			<Button
-				variant="link"
-				class="inline-flex items-center text-sm"
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://checkout.undb.io"
-			>
-				Pricing
-			</Button>
 			<Button variant="link" class="inline-flex items-center text-sm" href="/blog">Blog</Button>
-			<Button
-				variant="secondary"
-				class="ml-3 text-sm"
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://app.undb.io"
-			>
-				<CloudyIcon class="mr-2 h-4 w-4" />
-				{#if loggedIn}
-					Back to space
-				{:else}
-					Get Started
-				{/if}
-			</Button>
 
 			<a
 				href="https://discord.gg/3rcNdU3y3U"
