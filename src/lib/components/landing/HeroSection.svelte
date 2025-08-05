@@ -19,6 +19,7 @@
 
 <section id="hero" class="relative mx-auto mt-20 max-w-7xl px-6 text-center sm:mt-32 md:px-8">
 	<DotPattern class="[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]" />
+	<a href="https://teable.ai">
 		<div class="z-10 flex items-center justify-center">
 			<AnimatedGradientText>
 				🎉 <hr class="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />
@@ -28,7 +29,7 @@
 						`animate-gradient inline bg-gradient-to-r from-[#0011FF] via-[#0091FF] to-[#00F0FF] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
 					)}
 				>
-					Undb now join [Teable](teable.ai)
+					Undb now join Teable
 				</span>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +46,7 @@
 				>
 			</AnimatedGradientText>
 		</div>
+	</a>
 	<h1
 		class="-translate-y-4 animate-fade-in text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
 	>
